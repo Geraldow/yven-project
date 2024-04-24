@@ -26,26 +26,26 @@ cd yven-project
 ### Para enviar actualizaciones y creaciones de archivos al repositorio remoto, deben seguir estos pasos:
 1. Ejecutar cmd en la barra de navegación desde la carpeta del proyecto.
 2. Configurar su nombre y correo electrónico de Git de manera global o no para los registros de auditoría.
-4. Ubicarse en la rama 'main' para remitir los cambios.
-5. Las ramas serán creadas dependiendo de las asignaciones de cada desarrollador.
-6. Crear archivos para el proyecto.
-7. Visualizar los archivos disponibles.
-8. Seleccionar las funcionalidades aptas.
-9. Comentar los archivos elegidos.
-10. Enviar los archivos al repositorio remoto.
-11. Visualizar los cambios recientes desde el GitHub.
+4. Ubicarse en la rama 'develop'.
+6. Las nuevas ramas serán creadas desde 'develop' dependiendo de las asignaciones de cada desarrollador.
+7. Crear archivos para el proyecto.
+8. Visualizar los archivos disponibles.
+9. Seleccionar las funcionalidades aptas.
+10. Comentar los archivos elegidos.
+11. Enviar los archivos al repositorio remoto.
+12. Visualizar los cambios recientes desde el GitHub.
 
 ### Ejemplo
 
 ```sh
 git config --global user.name "<nombre>"
 git config --global user.email "<correo_electrónico>"
-git checkout main
+git checkout develop
 git status
 git add index.html
 git commit
 git push
-git log -n 1
+git log -n 10
 ```
 
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear cuenta - Yven App</title>
+    </head>
+    <body>
+
+        <div class="welcome-register-form">
+            <h1 class="title-register-form">Regístrate</h1> 
+        </div>
+
+        <div class="container-form-register">
+            <form action="../php/login.php" class="form-register" method="post">
+                <div class="social-methods">
+                    <button class="button-register-with-google">Registrarse con Google</button>
+                    <button class="button-register-with-apple">Registrarse con apple</button>
+                </div>
+                <div class="or-other-methods">
+                    <hr>
+                    <p>O</p>
+                    <hr>
+                </div>
+                <input type="text" name="formRegisterName" placeholder="Nombres">
+                <input type="text" name="formRegisterLastname" id="Apellidos">
+                <input type="email" name="formRegisterEmail" placeholder="Correo electrónico">
+                <input type="password" name="formRegisterPassword" placeholder="Ingresa tu contraseña">
+                <input type="password" name="formRegisterConfirmPassword" placeholder="Confirma tu contraseña">
+                <input type="checkbox" name="formRegisterCheckbox" id="rememberMe">Recuérdame
+                <input type="submit" name="formRegisterSubmit" value="Registrar cuenta">
+                <div class="if-have-account">
+                    <p class="question-if-have-account">¿Ya tienes una cuenta?</p>
+                    <a href="../html/login.html">Iniciar sesión</a>
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>

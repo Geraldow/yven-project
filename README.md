@@ -18,6 +18,7 @@ cd %USERPROFILE%\Desktop || cd %USERPROFILE%\OneDrive\Desktop
 mkdir dps_project
 cd dps_project
 git clone https://github.com/Geraldow/yven-project
+cd yven-project
 ```
 
 

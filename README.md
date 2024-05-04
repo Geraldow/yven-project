@@ -50,11 +50,14 @@ git log -n 10
 
 
 ## Tecnologías utilizadas
-Lenguaje de programación: 
-  - X
+Lenguajes: 
+  - HTML
+  - CSS
+  - JS
+  - PHP
     
 Framework:
-  - X
+  - Tailwind CSS
     
 Extensiones:
   - X
@@ -65,7 +68,6 @@ Extensiones:
     
 Temas:
   - Dobir next -AA0- Black
-
 
 
 ## Equipo 

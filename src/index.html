@@ -1,27 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <link href="./css/globalStyles.css" rel="stylesheet">
+    <link href="./css/generales.css" rel="stylesheet">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
 </head>
+
 <body class="bg-bg_dark">
-    <p class="text-[8em] text-primary font-bold ">Hola</p>
-    <p class="text-[32px] sansation">Hola</p>
-    
+    <header>
+        
 
-    <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-9 py-5 text-center me-2 mb-2">Blue</button>
-    <button class="text-white bg-secondary font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Green</button>
-    <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium text-sm px-5 py-2.5 text-center me-2 mb-2">Cyan</button>
-    <button type="button" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Teal</button>
-    <button type="button" class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Lime</button>
+<nav class="bg-dark-transparent sticky backdrop-blur-sm border-line_light/25  border-b">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="../public/assets/images/logo-transparente-1.png" class="h-12" alt="Yven Logo" />
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none  dark:text-gray-400  dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class=" flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 dark:bg-gray-800 ">
+          
+          <li>
+            <a href="#"
+                class="block py-3 px-1 text-light-color text-center  hover:border-b sansation md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Iniciar sesión</a>
+        </li>
+          <li>
+            <a href="#"
+                class="block sansation py-3 px-1 text-light-color hover:border-b  text-center md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Nosotros</a>
+        </li>
+          <li>
+            <a href="#"
+                class="block py-3 px-1 text-light-color hover:border-b text-center   md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Contactanos</a>
+        </li>
+      
+        </ul>
+      </div>
+    </div>
+  </nav>
   
-    <button class="text-white bg-primary font-medium rounded-lg text-sm px-10 py-5 text-center me-2 mb-2">Pink</button>
-    <button type="button" class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Purple</button>
-    
+    </header>
+    <section class="primary-section fixed flex flex-row w-full xl:pt-32 lg:pt-24 md:pt-12 sm:pt-12 sm:justify-center">
+        <section class="menu-social-media content-center">
+            <div class="bg-dark-transparent border-line_light/25 rounded-r-lg border flex flex-col w-16 justify-start shadow-sm"
+                role="group">
+                <button type="button"
+                    class="px-4 py-3 text-sm rounded-r-lg font-medium text-gray-900 bg-dark-transparent hover:bg-primary hover:text-blue-700 hover:rounded-tr-lg focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
+                    <img src="../public/assets/iconos/equis.png" alt="">
+                </button>
+                <button type="button"
+                    class="px-4 py-3 text-sm font-medium text-gray-900 bg-dark-transparent rounded-r-lg hover:bg-primary hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
+                    <img src="../public/assets/iconos/youtube.png" alt="">
+                </button>
+                <button type="button"
+                    class="px-4 py-3 text-sm font-medium text-gray-900 bg-dark-transparent rounded-r-lg hover:bg-primary hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
+                    <img src="../public/assets/iconos/instagram.png" alt="">
+                </button>
+                <button type="button"
+                    class="px-4 py-3 text-sm font-medium text-gray-900 bg-dark-transparent rounded-r-lg hover:bg-primary hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary hover:rounded-br-lg dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
+                    <img src="../public/assets/iconos/facebook.png" alt="">
+                </button>
+            </div>
+        </section>
+        <section>
+        
 
+            <div id="default-carousel" class="relative w-full  " data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden md:h-96">
+                     <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../public/assets/images/fiesta1.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../public/assets/images/fiesta2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../public/assets/images/fiesta3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            
+                </div>
+              
+            </div>
+            
+                </section>
+        <section class="container-text-primary pt-6 w-2/3 mx-6 xl:mx-12 lg:mx-12 md:mx-6 content-center ">
+            <h1
+                class="mb-16 uppercase font-bold text-light-color ">
+                UN LUGAR PARA TODOS TUS EVENTOS</h1>
+            <p class="font-normal text-light-color xs:text-4xl xl:text-4xl md:text-md lg:text-2xl sm:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed lacinia lacus quis magna consequat, sed commodo turpis cursus. Sed
+                euismod, leo eu gravida tincidunt, tortor ligula vestibulum libero, non eleifend ligula risus sed
+                libero.
+            </p>
+            <button class="button-primary uppercase text-white sansation  mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-8 py-4 text-center mb-2">Obtenlo gratis</button>
+        </section>
+<section class="main-carousel w-5/6 h-full">
+        <div id="carousel" class="content-center" >
+
+           <div class="prev rounded-large">
+             <img class="rounded-large" src="../public/assets/images/fiesta1.jpeg">
+           </div>
+     
+           <div class="selected rounded-large">
+             <img class="rounded-large" src="../public/assets/images/fiesta2.jpeg">
+           </div>
+     
+           <div class="next rounded-large">
+             <img class="rounded-large" src="../public/assets/images/fiesta3.jpeg">
+           </div>
+    
+     
+         </div>
+     
+    </section>
+
+          
+    </section>
+ <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="js/slider.js"></script>
 </body>
+
 </html>

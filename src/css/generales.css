@@ -1,0 +1,156 @@
+
+@media screen and (max-width: 800px) {
+  section .container-text-primary{
+    display: flex;
+    flex-direction: column;
+    width: 90%!important;
+    margin-right: 16px!important;
+}
+.primary-section{
+  display: block!important;
+  
+}
+
+.container-text-primary h1{
+  font-size: 2.2rem!important;
+  line-height: 1.1;
+  margin-top: 0!important;
+  margin-bottom: 16px; 
+  padding-top: 0!important;
+ 
+}
+p{
+  display: flex!important;
+  line-height: 1.25!important;
+}
+}
+/*Botones*/
+.button-primary{
+  font-size: 18px!important;
+}
+
+@media screen and (max-width: 1024px) {
+  .button-primary{
+    font-size: 14px!important;
+}
+}
+@media screen and (max-width: 800px) {
+  .button-primary{
+    font-size: 12px!important;
+    margin-top: 18px!important;
+    width: 100%!important;
+    margin-right: 16px!important;
+}
+}
+
+/* Estilos generales del slider */
+@media screen and (min-width: 1500px) {
+  #carousel {
+    top: 80px;
+
+  }
+  .container-text-primary h1{
+    padding-top: 1em;
+    font-size: 3.8rem;
+    line-height: 1.1;
+    
+}
+}
+@media screen and (max-width: 1490px) {
+  #carousel {
+    top: 80px;
+
+  }
+
+  .container-text-primary h1{
+    padding-top: 1em;
+    font-size: 2.6rem;
+    line-height: 1.1;
+    
+}
+}
+
+@media screen and (min-width: 800px) {
+  #default-carousel {
+    display: none;
+  }
+   
+ }
+@media screen and (max-width: 800px) {
+  #carousel {
+    display: none;
+  }
+    .menu-social-media{
+        display: none;
+    }
+    .container-text-primary p{
+        font-size: 1.2rem;
+    }
+    .container-text-primary h1{
+        font-size: 1.8rem;
+        margin-top: 1em;
+        width: 100%;
+    }
+
+ }
+
+  #carousel {
+    position: relative;
+    min-height: 600px;
+    max-height: 900px;
+    padding-bottom: 12px;
+    top:50px;
+  }
+  #carousel div.prev img,
+#carousel div.next img {
+    opacity: 0.5; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carousel div.selected img {
+    opacity: 1;
+     
+}
+
+  #carousel div {
+    position: absolute;
+    transition: transform 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+  }
+  
+  
+  #carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(-110%) translateX(50%);
+  
+  }
+  
+  #carousel div.prev img {
+   max-width: 40%;
+  }
+  
+  .selected{
+    min-width: 200px;
+    max-width: 400px;
+  }
+  #carousel div.selected {
+    z-index: 10;
+    left: 45%;
+    transform: translateY(-50%) translateX(-50%);
+    box-shadow: 5px 0px 20px rgba(29, 29, 29, 0.5); /* Agrega una sombra que se desplaza hacia la derecha */
+
+  }
+  
+  #carousel div.next {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(10%) translateX(50%);
+    
+  }
+  
+  #carousel div.next img {
+    
+    width: 40%;
+  }
+  

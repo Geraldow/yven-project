@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección Nosotros */
+
+.title-section {
+    margin: 20px 200px 20px ;
+    font-weight: bold;
+}
+
+.nosotros {
+    font-size: 45px;
+}
+
+.container-mivi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 90px;
+    margin: 0 auto;
+    color: white;
+    height: 600px;
+    width: 80%;
+}
+
+
+.title-mivi{
+    position: relative;
+    padding: 50px 70px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+/* Contexto difuminado - Guía */
+
+.title-mivi:before {
+    content: ""; /* Añadir un pseudo-elemento antes del contenido del div */
+    position: absolute; /* Posicionar el pseudo-elemento */   
+    width: 100%;
+    height: 100%;   
+    background-color: rgba(255, 255, 255, 0.10); /* Color de fondo con transparencia */
+    z-index: -1; /* Colocar el pseudo-elemento detrás de los elementos internos */
+    border-radius: 10px; /* Copiar el borde redondeado del div principal */
+    filter: blur(100px);
+}
+
+.misi {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.text-mivi {
+    font-size: 41px;
+    line-height: 50px;
+    z-index: 1; /* Asegurar que los elementos hijos estén por encima del pseudo-elemento */
+}

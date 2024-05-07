@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
 
 
 * {
@@ -10,15 +9,168 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-purple: #8a5796;
+    --color-dark-green: #46A19C;
+    --color-dark-red: #9C3C68;
+}
+
+/* Sección Ventajas Yven Slider */
+
+.title-ventajas {
+    margin: 20px 230px 20px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card-container{
+    padding-block: 5rem;
+}
+
+.card-content {
+    margin-inline: 1.75rem;
+    overflow: hidden;
+}
+
+/* Info of turn */
+
+.container-turn {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10; 
+    color: white;
+}
+
+.card-article:hover .container-turn {
+    opacity: 1;
+}
+
+.card-article .card-image img {
+    transition: filter 0.2s ease;
+}
+
+.card-article:hover .card-image img {
+    filter: brightness(0.20); 
+}
+
+.card-article .card-image {
+    overflow: hidden; 
+}
+
+.card-article:hover .card-name {
+    opacity: 0; 
+}
+
+.card-article:hover .card-image img,
+.card-article:hover .card-data{
+    opacity: 0.3;
+}
+
+.title-turn {
+    margin: 40px 0px;
+}
+
+.card-image {
+    position: relative;
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+
+.card-data {
+    background: linear-gradient(rgba(5,5,5, 0.4), rgba(5,5,5, 0.6)) var(--color-dark-green);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card-img {
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.card-name {
+    color: white;
+    max-height: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: var(--color-dark-green);
+    display: none;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgb(255, 255, 255);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-dark-green);
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .card-data {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-content {
+        margin-inline: 3rem;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1120px){
+    .card-container {
+        max-width: 1120px;
+    }
+    
+}
+
+
+
 /* Sección Nosotros */
+
+
 
 .title-section {
     margin: 20px 200px 20px ;
-    font-weight: bold;
 }
 
-.nosotros {
+.val-noso {
     font-size: 45px;
+    font-weight: 300;
 }
 
 .container-mivi {
@@ -41,16 +193,13 @@
     overflow: hidden;
 }
 
-/* Contexto difuminado - Guía */
-
 .title-mivi:before {
     content: ""; /* Añadir un pseudo-elemento antes del contenido del div */
-    position: absolute; /* Posicionar el pseudo-elemento */   
+    position: absolute; 
     width: 100%;
     height: 100%;   
-    background-color: rgba(255, 255, 255, 0.10); /* Color de fondo con transparencia */
-    z-index: -1; /* Colocar el pseudo-elemento detrás de los elementos internos */
-    border-radius: 10px; /* Copiar el borde redondeado del div principal */
+    background-color: rgba(255, 255, 255, 0.10); 
+    border-radius: 10px; 
     filter: blur(100px);
 }
 
@@ -62,7 +211,44 @@
 .text-mivi {
     font-size: 41px;
     line-height: 50px;
-    z-index: 1; /* Asegurar que los elementos hijos estén por encima del pseudo-elemento */
 }
-=======
->>>>>>> bc4fc2ab0f3e9ae16c9e9bd0435b19863f014457
+
+/* Nuestros valores */
+
+.container-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 450px);
+    margin: 0px 290px;
+    gap: 40px;
+}
+
+.three-containers {
+    color: white;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+.card-green {
+    background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)) var(--color-dark-green);
+}
+
+.card-purple {
+    background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)) var(--color-purple);
+}
+
+.card-red {
+    background: linear-gradient(rgba(5,5,5, 0.3), rgba(5,5,5, 0.3)) var(--color-dark-red);
+}
+
+.title-valores{
+    margin: 8px 0;
+    font-size: 34px;
+    line-height: 38px;
+}
+
+.text-valores {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+}

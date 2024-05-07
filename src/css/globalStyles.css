@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root{
+    --primary-color: #345E67;
+    --secondary-color: #221D31;
+    --white-color: #FFF;
+    --green-light: #46A19C;
+    
+}
+
+body {
+    background-color: var(--secondary-color);
+    padding: 5em;
+}
+
+div button.color-btns {    
+    background-color: #345E67;
+}
+
+button.login-color-btn {
+    background-color: var(--green-light);
+}
+
+p a span.create-new-acc {
+    color: var(--green-light);
+}
+
+.custom-bg-color {
+   background-color: var(--secondary-color);
+}

@@ -18,7 +18,6 @@ body {
 
 body {
     background-color: var(--secondary-color);
-    padding: 5em;
 }
 
 div button.color-btns {    

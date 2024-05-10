@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Yven</title>
+    <link rel="stylesheet" href="/src/css/globalStyles.css">
+    <script src="https://kit.fontawesome.com/b2ac020bc7.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body> 
+
+    <hgroup class="container mx-auto max-w-xl">
+        <h2 class="text-center text-2xl text-white font-bold mb-4">Regístrate</h2>
+        <p class="text-center text-white mb-8">Crear nueva cuenta</p>
+      </hgroup>
+      
+      <div class="container mx-auto max-w-xl p-4 shadow-md rounded-lg border border-gray-700">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex-1 w-full md:w-1/2 mr-4 mb-4">
+            <button class="flex items-center w-full h-auto bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-gray-800 color-btns">
+              <i class="fab fa-google mr-2 ml-10"></i>
+              <p class="w-full h-auto mr-10 text-sm">Registrarse con Google</p>
+            </button>
+            <hr class="mt-4">
+          </div>
+          
+          <div class="flex-1 w-full md:w-1/2 mr-4 mb-4">
+            <button class="flex items-center w-full h-auto bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-gray-800 color-btns">
+              <i class="fa-brands fa-apple mr-2 ml-10"></i>
+              <p class="w-full h-auto mr-10 text-sm">Registrarse con Apple</p>
+            </button>
+            <hr class="mt-4">
+          </div>
+      
+        </div>
+      
+        <form class="flex flex-col">
+          <input type="text" id="registerName" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Nombres" required>
+          <br>
+
+          <input type="text" id="registerLastname" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Apellidos" required>
+          <br>
+
+          <input type="email" id="registerEmail" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Ingresa tu correo electrónico" required>
+          <br>
+          
+          <input type="password" id="registerPassword" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Ingresa tu contraseña" required>
+          <br>
+
+          <input type="password" id="registerConfirmPassword" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Confirma tu contraseña" required>  
+
+          <div class="flex items-center mt-4">
+            <input type="checkbox" id="registerRememberMe" class="mr-2">
+            <label for="registerRememberMe" class="text-white">Recuérdame</label>
+          </div>
+      
+          <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 mt-4 rounded-lg hover:bg-gray-800 login-color-btn">
+            Iniciar sesión
+          </button>
+        </form>
+  
+        <p class="text-center mt-4 text-white">¿Ya tienes una cuenta? <a href="./login.html"><span class="create-new-acc">Iniciar sesión</span></a></p>
+      </div>
+      
+</body>
+</html>

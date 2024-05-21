@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +14,230 @@
     --color-dark-red: #9C3C68;
 }
 
+body {
+    background-image: url(/public/assets/background/background.svg);
+    font-family: 'Montserrat';
+}
+
+/* Sección Eventos */
+
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 580px; /* Por modificar en el responsive*/
+    overflow: hidden;
+    margin: 30px 0px;
+    color: white;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .tablink {
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .tablink {
+        font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 428px) {
+    .tablink {
+        font-size: 12px;
+    }
+  }
+  
+  .tabcontent {
+    display: none;
+    text-align: center;
+    overflow-y: auto; 
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+  
+
+  #underline {
+    height: 3px;
+    border-bottom: 2px solid var(--color-dark-green);
+    transition: width 0.3s ease, left 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 30px;
+    justify-items: center;
+    max-width: 100%; 
+    margin: 20px 100px;
+  }
+  
+  .card-ventajas {
+    border-radius: 10px;
+    display: flex;
+    background: #46a19c39;
+    text-align: center;
+    width: 100%; 
+    height: 200px; 
+    box-sizing: border-box;
+    border: 1px solid rgb(221, 221, 221);
+  }
+  
+  .card-ventajas img {
+    flex: 1;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .card-text {
+    flex: 1.6;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .card-text h3 {
+    margin: 30px 0;
+  }
+  
+  .card-text p {
+    font-size: 14px;
+    color: white;
+  }
+  
+  /* Estilos responsivos */
+  @media screen and (max-width: 1350px) {
+    .card-text h3 {
+        font-size: 17px;
+    }
+    .card-text > p {
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 1230px){
+    
+    .tabs-container {
+        height: 700px; 
+    }
+    .grid-container {
+        display: grid;
+        margin: 30px 10px;
+        column-gap: 8px;
+    }
+    .card-ventajas {
+        height: 230px;
+    }
+    .card-text {
+        flex: 10;
+    }
+    .card-ventajas img {
+        flex: 0;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .tabs-container {
+        height: 900px;
+    }
+
+    .card-text > h3 {
+        font-size: 19px;
+    }
+    .card-text > p {
+        font-size: 15px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+
+    .tabs-container {
+        height: 1200px;
+        margin: 20px 20px;
+    }
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .card-ventajas {
+        height: 170px;
+    }
+  
+    .card-ventajas img {
+      border-radius: 8px;
+    }
+  
+    .card-text {
+        text-align: left;
+        padding: 0 30px;
+    }
+
+  }
+
+  @media screen and (max-width: 530px) {
+    .card-text  h3{
+        margin: 10px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .tabs-container {
+        margin: 7px;
+    }
+
+    .grid-container {
+        margin: 10px 0;
+    }
+
+    .card-ventajas > img {
+        flex: 0;
+    }
+
+    .card-text {
+        padding: 0 10px;
+        flex: 5;
+        text-align: left;
+    }
+
+    .card-text > h3 {
+        font-size: 17px;
+    }
+
+    .card-text > p{
+        font-size: 13.5px;
+    }
+  }
+  
+
+  
 /* Sección Ventajas Yven Slider */
+
+
 
 .title-ventajas {
     margin: 50px 0 0 15%;
     font-size: 30px;
 }
+
 
 .container {
     display: flex;
@@ -124,13 +346,11 @@
     right: 0;
 }
 
-/* .swiper-button-prev::after,
-.swiper-button-next::after {
-    content: '';
-} */
-
 .swiper-pagination-bullet {
+    margin-top: 100px;
     background-color: rgb(255, 255, 255);
+    height: 15px;
+    width: 15px;
 }
 
 .swiper-pagination-bullet-active {
@@ -200,7 +420,7 @@
     filter: blur(100px);
 }
 
-.misi {
+.mivi {
     font-size: 50px;
     font-weight: bold;
 }
@@ -209,6 +429,90 @@
     font-size: 41px;
     line-height: 50px;
 }
+
+/*  Responsive */
+
+@media (max-width: 1669px) {
+    .title-mivi {
+        padding: 50px;
+    }
+    .text-mivi {
+        font-size: 30px;        
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .title-mivi {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .title-mivi {
+        padding: 20px;
+    }
+    .text-mivi {
+        font-size: 25px;
+        line-height: 35px
+    }
+    .container-mivi {
+        height: 430px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container-mivi {
+        display: grid;
+        width: 95%;
+        column-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .mivi {
+        font-size: 40px;
+    }
+    .text-mivi {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    .container-mivi {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 600px;
+        width: 85%;
+        row-gap: 20px;
+    }
+
+    .text-mivi {
+        line-height: 35px;
+    }
+}
+
+
+@media screen and (max-width: 495px) {
+    .container-mivi {
+        display: grid;
+        height: 600px;
+    }
+    .text-mivi {
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .container-mivi {
+        height: 680px;
+    }
+    .title-mivi {
+        padding: 10px;
+    }
+}
+
 
 /* Nuestros valores */
 
@@ -248,4 +552,45 @@
     font-size: 20px;
     line-height: 23px;
     font-weight: 400;
+}
+
+@media screen and (max-width: 1615px) {
+    .container-valores {
+        display: grid;
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1235px) {
+    .container-valores {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        margin: 0 20px;
+    }   
+
+    .title-valores {
+        line-height: 30px;
+        font-size: 27px;
+    }
+
+    .text-valores {
+        font-size: 19px;
+    }
+
+    .three-containers {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container-valores {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .val-noso {
+        font-size: 40px;
+        margin: 30px 35px;
+    }
 }

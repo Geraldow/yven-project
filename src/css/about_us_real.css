@@ -234,8 +234,8 @@ body {
 
 
 .title-ventajas {
-    margin: 50px 0 0 15%;
-    font-size: 30px;
+    margin: 50px 0 0 3em;
+    font-size: 36px;
 }
 
 
@@ -281,6 +281,7 @@ body {
 
 .card-article .card-image img {
     transition: filter 0.2s ease;
+    width: 100%;
 }
 
 .card-article:hover .card-image img {
@@ -376,7 +377,7 @@ body {
 
 @media screen and (min-width: 1120px){
     .card-container {
-        max-width: 1120px;
+        
     }
     
 }

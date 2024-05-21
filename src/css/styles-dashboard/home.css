@@ -2,12 +2,20 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+/*Estilos de navbar*/
+.profile{
+    width: 3rem!important;
+    height:3rem!important; ;
+}
+.options-profile i{
+    font-size: 1.2rem;
+}
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 250px;
+    width: 220px;
     overflow-x: hidden;
     padding: 20px 16px;
     color: white;
@@ -22,11 +30,51 @@ body {
     display: block;
 }
 .sidebar a:hover {
-    background-color: #575757;
+    background-color: #46a19c75;
+    border-radius: 1rem;
+ 
 }
+.sidebar a:hover i {
+    color: #46a19c;
+}
+.sidebar a:hover i,
+.sidebar a.active i {
+    color: #46a19c;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: #46a19c75;
+    border-radius: 1rem;
+}
+.logo{
+    margin: 0 auto;
+}
+
 .content {
     margin-left: 250px;
     padding: 20px;
+}
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.navbar .profile span {
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.navbar .profile i {
+    color: #46a19c;
 }
 @media screen and (max-width: 768px) {
     .sidebar {
@@ -48,6 +96,7 @@ body {
         cursor: pointer;
     }
 }
+
 /*Empiezan estilos de la estructura del menu*/
 .logout{
     position: absolute;

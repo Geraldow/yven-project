@@ -8,46 +8,50 @@
     <link href="./css/globalStyles.css" rel="stylesheet">
     <link href="./css/generales.css" rel="stylesheet">
     <title>Document</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/about_us_real.css">
 </head>
 
 <body class="bg-bg_dark">
     <header>
-        
+        <nav id="first-section" class="bg-dark-transparent sticky backdrop-blur-sm border-line_light/25  border-b">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../public/assets/images/logo-transparente-1.png" class="h-12" alt="Yven Logo" />
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none  dark:text-gray-400  dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class=" flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 dark:bg-gray-800 ">
 
-<nav id="first-section"  class="bg-dark-transparent sticky backdrop-blur-sm border-line_light/25  border-b">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../public/assets/images/logo-transparente-1.png" class="h-12" alt="Yven Logo" />
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none  dark:text-gray-400  dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class=" flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 dark:bg-gray-800 ">
-          
-          <li>
-            <a href="#"
-                class="block py-3 px-1 text-light-color text-center  hover:border-b sansation md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Iniciar sesión</a>
-        </li>
-          <li>
-            <a href="#"
-                class="block sansation py-3 px-1 text-light-color hover:border-b  text-center md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Nosotros</a>
-        </li>
-          <li>
-            <a href="#"
-                class="block py-3 px-1 text-light-color hover:border-b text-center   md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Contactanos</a>
-        </li>
-       
-      </div>
-    </div>
-  </nav>
-  
+                        <li>
+                            <a href="#"
+                                class="block py-3 px-1 text-light-color text-center  hover:border-b sansation md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Iniciar
+                                sesión</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block sansation py-3 px-1 text-light-color hover:border-b  text-center md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-3 px-1 text-light-color hover:border-b text-center   md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Contactanos</a>
+                        </li>
+
+                </div>
+            </div>
+        </nav>
+
     </header>
     <section class="primary-section flex flex-row w-full xl:pt-6 4 md:pt-12  sm:justify-center">
         <section class="menu-social-media content-center">
@@ -72,179 +76,196 @@
             </div>
         </section>
         <section>
-        
+
 
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
                 <div class="relative h-96 overflow-hidden md:h-96">
-                     <!-- Item 1 -->
+                    <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../public/assets/images/fiesta1.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="../public/assets/images/fiesta1.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../public/assets/images/fiesta2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="../public/assets/images/fiesta2.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../public/assets/images/fiesta3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        <img src="../public/assets/images/fiesta3.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
-                
+
                 </div>
                 <!-- Slider indicators -->
                 <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+
                 </div>
-              
+
             </div>
-            
-                </section>
+
+        </section>
         <section class="container-text-primary pt-6 w-2/3 mx-8 xl:mx-12 lg:mx-12 md:mx-6 content-center ">
-            <h1
-                class="mb-16 uppercase font-bold text-light-color ">
+            <h1 class="mb-16 uppercase sansation font-bold text-light-color ">
                 UN LUGAR PARA TODOS TUS EVENTOS</h1>
-            <p class="font-normal text-light-color xs:text-4xl xl:text-4xl md:text-md lg:text-2xl sm:text-lg dark:text-gray-400">Lorem ipsum dolor sit amet,
+            <p
+                class="font-normal text-light-color xs:text-4xl xl:text-4xl md:text-md lg:text-2xl sm:text-lg dark:text-gray-400">
+                Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Sed lacinia lacus quis magna consequat, sed commodo turpis cursus. Sed
                 euismod, leo eu gravida tincidunt, tortor ligula vestibulum libero, non eleifend ligula risus sed
                 libero.
             </p>
-            <button class="button-primary uppercase text-white sansation text-lg mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-8 py-4 text-center mb-2">Obtenlo gratis</button>
+            <button
+                class="button-primary uppercase text-white sansation text-lg mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-8 py-4 text-center mb-2">Obtenlo
+                gratis</button>
         </section>
-<section class="main-carousel w-5/6 h-full">
-        <div id="carousel" class="content-center" >
+        <section class="main-carousel w-5/6 h-full">
+            <div id="carousel" class="content-center">
 
-           <div class="prev rounded-large">
-             <img class="rounded-large" src="../public/assets/images/fiesta1.jpeg">
-           </div>
-     
-           <div class="selected rounded-large">
-             <img class="rounded-large" src="../public/assets/images/fiesta2.jpeg">
-           </div>
-     
-           <div class="next rounded-large">
-             <img class="rounded-large" src="../public/assets/images/fiesta3.jpeg">
-           </div>         
-         </div>     
-    </section>
+                <div class="prev rounded-large">
+                    <img class="rounded-large" src="../public/assets/images/fiesta1.jpeg">
+                </div>
 
-          
-    </section>
-        <!-- Sección Ventajas Yven Slider -->
-    <section class="ventajas-container pt-24 my-8">
-    <h2 class="text-white title-ventajas my-8 font-sansation">CONOCE LAS VENTAJAS DE USAR YVEN</h2>
-    <section class="container">
-        <div class="card-container swiper">
-            <div class="card-content">
-                <div class="swiper-wrapper">
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="img/slider-img1.png" alt="Imagen Ventajas Yven" class="card-img">                            
-                        </div>               
-                        <div class="card-data">
-                            <h3 class="card-name">
-                                EFICACIA EN TUS EVENTOS
-                            </h3>
-                        </div>
-                        <!-- Info of turn -->
-                        <div class="container-turn">
-                            <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
-                            <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!</p>
-                        </div>                       
-                    </article>            
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="img/slider-img2.png" alt="Imagen Ventajas Yven" class="card-img">
-                        </div>
-                        <div class="card-data">
-                            <h3 class="card-name">
-                                MUESTRA TU NEGOCIO
-                            </h3>
-                        </div>
-                        <!-- Info of turn -->
-                        <div class="container-turn">
-                            <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
-                            <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!</p>
-                        </div>    
-                    </article>
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="img/slider-img3.png" alt="Imagen Ventajas Yven" class="card-img">
-                        </div>
-                        <div class="card-data">
-                            <h3 class="card-name">
-                                AMPLIA RED DE PROVEEDORES
-                            </h3>
-                        </div>
-                        <!-- Info of turn -->
-                        <div class="container-turn">
-                            <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
-                            <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!</p>
-                        </div>    
-                    </article>
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="img/slider-img4.png" alt="Imagen Ventajas Yven" class="card-img">
-                        </div>
-                        <div class="card-data">
-                            <h3 class="card-name">
-                                EXAMPLE FOR CARDS 
-                            </h3>
-                        </div>
-                        <!-- Info of turn -->
-                        <div class="container-turn">
-                            <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
-                            <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!</p>
-                        </div>    
-                    </article>
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="img/slider-img5.png" alt="Imagen Ventajas Yven" class="card-img">
-                        </div>
-                        <div class="card-data">
-                            <h3 class="card-name">
-                                EXAMPLE FOR CARDS 
-                            </h3>
-                        </div>
-                        <!-- Info of turn -->
-                        <div class="container-turn">
-                            <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
-                            <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!</p>
-                        </div>    
-                    </article>
-                    <article class="card-article swiper-slide">
-                        <div class="card-image">
-                            <img src="img/slider-img6.png" alt="Imagen Ventajas Yven" class="card-img">
-                        </div>
-                        <div class="card-data">
-                            <h3 class="card-name">
-                                EXAMPLE FOR CARDS 
-                            </h3>
-                        </div>
-                        <!-- Info of turn -->
-                        <div class="container-turn">
-                            <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
-                            <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!</p>
-                        </div>    
-                    </article>
+                <div class="selected rounded-large">
+                    <img class="rounded-large" src="../public/assets/images/fiesta2.jpeg">
+                </div>
+
+                <div class="next rounded-large">
+                    <img class="rounded-large" src="../public/assets/images/fiesta3.jpeg">
                 </div>
             </div>
-            <!-- Boton de Next and Back -->
-            <div class="swiper-button-prev">
-                <i class="ri-arrow-left-wide-line"></i>
-            </div>
-            <div class="swiper-button-next">
-                <i class="ri-arrow-right-wide-line"></i>
-            </div>
-             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        </div>
+        </section>
+
+
     </section>
+
+    <!-- Sección Ventajas Yven Slider -->
+    <section class="ventajas-container pt-24 my-8">
+        <h2 class="text-white title-ventajas my-8 font-sansation">CONOCE LAS VENTAJAS DE USAR YVEN</h2>
+        <section class="container">
+            <div class="card-container swiper">
+                <div class="card-content">
+                    <div class="swiper-wrapper">
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="img/slider-img1.png" alt="Imagen Ventajas Yven" class="card-img">
+                            </div>
+                            <div class="card-data">
+                                <h3 class="card-name">
+                                    EFICACIA EN TUS EVENTOS
+                                </h3>
+                            </div>
+                            <!-- Info of turn -->
+                            <div class="container-turn">
+                                <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
+                                <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="img/slider-img2.png" alt="Imagen Ventajas Yven" class="card-img">
+                            </div>
+                            <div class="card-data">
+                                <h3 class="card-name">
+                                    MUESTRA TU NEGOCIO
+                                </h3>
+                            </div>
+                            <!-- Info of turn -->
+                            <div class="container-turn">
+                                <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
+                                <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="img/slider-img3.png" alt="Imagen Ventajas Yven" class="card-img">
+                            </div>
+                            <div class="card-data">
+                                <h3 class="card-name">
+                                    AMPLIA RED DE PROVEEDORES
+                                </h3>
+                            </div>
+                            <!-- Info of turn -->
+                            <div class="container-turn">
+                                <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
+                                <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="img/slider-img4.png" alt="Imagen Ventajas Yven" class="card-img">
+                            </div>
+                            <div class="card-data">
+                                <h3 class="card-name">
+                                    EXAMPLE FOR CARDS
+                                </h3>
+                            </div>
+                            <!-- Info of turn -->
+                            <div class="container-turn">
+                                <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
+                                <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="img/slider-img5.png" alt="Imagen Ventajas Yven" class="card-img">
+                            </div>
+                            <div class="card-data">
+                                <h3 class="card-name">
+                                    EXAMPLE FOR CARDS
+                                </h3>
+                            </div>
+                            <!-- Info of turn -->
+                            <div class="container-turn">
+                                <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
+                                <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="img/slider-img6.png" alt="Imagen Ventajas Yven" class="card-img">
+                            </div>
+                            <div class="card-data">
+                                <h3 class="card-name">
+                                    EXAMPLE FOR CARDS
+                                </h3>
+                            </div>
+                            <!-- Info of turn -->
+                            <div class="container-turn">
+                                <h3 class="title-turn">EFICACIA EN TUS EVENTOS</h3>
+                                <p class="text-turn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa!
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Boton de Next and Back -->
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-wide-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-wide-line"></i>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </section>
-      <!-- Sección Nosotros -->
-      <div class="title-section-nosotros">
+    
+    <!-- Sección Nosotros -->
+    <div class="title-section-nosotros">
         <h3 class="val-noso text-white">NOSOTROS
     </div>
     <div class="container-mivi">
@@ -269,7 +290,7 @@
     <div class="container-valores">
         <div class="three-containers card-green">
             <img src="img/idea1.png" alt="Imagen Focus">
-            <h3 class="title-valores" >Innovación y creatividad</h3>
+            <h3 class="title-valores">Innovación y creatividad</h3>
             <p class="text-valores">YVEN Adopta la innovación y la creatividad en todos los aspectos de su negocio,
                 desde el desarrollo de nuevos conceptos de eventos y soluciones tecnológicas hasta
                 la búsqueda de formas únicas de atraer y deleitar a los clientes. Fomentan una cultura
@@ -279,7 +300,7 @@
         </div>
         <div class="three-containers card-purple">
             <img src="img/cohesion1.png" alt="Imagen Cohesion">
-            <h3 class="title-valores" >Responsabilidad social y sostenibilidad</h3>
+            <h3 class="title-valores">Responsabilidad social y sostenibilidad</h3>
             <p class="text-valores">Participamos activamente en iniciativas sociales y ambientales que contribuyen al
                 bienestar de la comunidad y del planeta. Minimizan el impacto ambiental de sus operaciones
                 comerciales mediante la adopción de prácticas sostenibles y la reducción de residuos.
@@ -287,22 +308,24 @@
         </div>
         <div class="three-containers card-red">
             <img src="img/heart1.png" alt="Imagen Corazón">
-            <h3 class="title-valores" >Enfoque en el <br> cliente</h3>
-            <p class="text-valores">YVEN prioriza las necesidades y la satisfacción de sus clientes durante todo el proceso
+            <h3 class="title-valores">Enfoque en el <br> cliente</h3>
+            <p class="text-valores">YVEN prioriza las necesidades y la satisfacción de sus clientes durante todo el
+                proceso
                 de planificación y ejecución del evento. Escuchan activamente los comentarios de los clientes
                 y los utilizan para mejorar sus productos, servicios y la experiencia general del cliente.
             </p>
         </div>
     </div><br><br><br>
-     <!-- Botón para volver al primer sección -->
-     <a href="#first-section" id="back-to-top" class="fixed bottom-4 right-4 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary">
+    <!-- Botón para volver al primer sección -->
+    <a href="#first-section" id="back-to-top"
+        class="fixed bottom-4 right-4 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary">
         ↑ Volver arriba
     </a>
 
     <script src="js/scripts.js"></script>
-     <script src="js/swiper-bundle.min.js"></script>
-     <script src="js/slider-ventajas.js"></script>
- <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/slider-ventajas.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="js/slider.js"></script>
 </body>

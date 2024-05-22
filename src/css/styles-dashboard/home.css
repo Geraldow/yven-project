@@ -52,7 +52,7 @@ body {
 }
 
 .content {
-    margin-left: 250px;
+    margin-left: 210px;
     padding: 20px;
 }
 .navbar .profile {
@@ -75,6 +75,14 @@ body {
 
 .navbar .profile i {
     color: #46a19c;
+}
+
+.dashboard{
+    width: 66%;
+}
+
+.right-section{
+    width: 25%;
 }
 @media screen and (max-width: 768px) {
     .sidebar {
@@ -101,4 +109,62 @@ body {
 .logout{
     position: absolute;
     bottom: 20px;
+}
+
+/* Carrusel de categorias */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    max-width: 100px;
+    min-width: 22%;
+    max-height: 320px;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 60%;
+  object-fit:fill;
+    border-radius: 8px;
+    padding: 0 0 2px 0;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 56px;
+}
+
+.carousel-indicators button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.carousel-indicators .active {
+    background: #F8F8F8; 
 }

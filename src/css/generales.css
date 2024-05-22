@@ -116,10 +116,9 @@ body {
   }
 
   .title-ventajas {
-    margin: .5em 1em !important;
-    padding-top: 12px;
-    font-size: 28px!important;
-  }
+   
+    font-size: 36px;
+}
 }
 
 #carousel {
@@ -205,4 +204,10 @@ body {
     outline: none!important;
     outline-color: var(--color-dark-green);
   }
+}
+
+/* Footer */
+.custom-background {
+  background: linear-gradient(to right, #26414095, #203a3ac8, rgba(0, 0, 0, 0.389));
+  
 }

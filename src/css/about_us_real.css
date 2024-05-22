@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 580px; /* Por modificar en el responsive*/
+    height: 550px; /* Por modificar en el responsive*/
     overflow: hidden;
     margin: 30px 0px;
     color: white;
@@ -231,12 +231,6 @@ body {
   
 /* Sección Ventajas Yven Slider */
 
-
-
-.title-ventajas {
-    margin: 50px 0 0 3em;
-    font-size: 36px;
-}
 
 
 .container {
@@ -591,7 +585,7 @@ body {
     }
 
     .val-noso {
-        font-size: 40px;
+        font-size: 32px;
         margin: 30px 35px;
     }
 }

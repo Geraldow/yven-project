@@ -1,6 +1,10 @@
+:root {
+  --color-purple: #8a5796;
+  --color-dark-green: #46A19C;
+  --color-dark-red: #9C3C68;
+}
 body {
   overflow-x: hidden;
-  font-family: 'Montserrat';
 }
 
 @media screen and (max-width: 800px) {
@@ -112,10 +116,9 @@ body {
   }
 
   .title-ventajas {
-    margin: .5em 1em !important;
-    padding-top: 12px;
-    font-size: 28px!important;
-  }
+   
+    font-size: 36px;
+}
 }
 
 #carousel {
@@ -179,4 +182,32 @@ body {
 #carousel div.next img {
 
   width: 40%;
+}
+
+/* Login */
+
+@media screen and (max-width: 577px){
+  .icons{
+    margin: 0 1rem!important;
+  }
+
+  body{
+    margin: 0 1rem;
+    padding:  0 1rem;
+  }
+
+  p{
+    margin-right: 4px!important;
+  }
+
+  .input-info input:focus{
+    outline: none!important;
+    outline-color: var(--color-dark-green);
+  }
+}
+
+/* Footer */
+.custom-background {
+  background: linear-gradient(to right, #26414095, #203a3ac8, rgba(0, 0, 0, 0.389));
+  
 }

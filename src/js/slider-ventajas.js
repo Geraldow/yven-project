@@ -32,9 +32,14 @@ let swiperCards = new Swiper('.card-content', {
 
 document.addEventListener("DOMContentLoaded", function(event) {
   // Mostrar la pestaña "Todos los eventos" por defecto
-  openTab('todos', {
-    currentTarget: document.querySelector('.tablink')
-  });
+  var defaultTab = document.querySelector('.tablink');
+  if (defaultTab) {
+    openTab('todos', {
+      currentTarget: defaultTab
+    });
+  } else {
+    console.error("Default tablink not found.");
+  }
 });
 
 function openTab(tabName, event) {
@@ -47,11 +52,23 @@ function openTab(tabName, event) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove("active");
   }
-  document.getElementById(tabName).style.display = "block";
+  
+  var tab = document.getElementById(tabName);
+  if (tab) {
+    tab.style.display = "block";
+  } else {
+    console.error("Element with id '" + tabName + "' not found.");
+  }
+  
   if (event) {
     event.currentTarget.classList.add("active");
     var underline = document.getElementById("underline");
-    underline.style.width = event.currentTarget.offsetWidth + "px";
-    underline.style.left = event.currentTarget.offsetLeft + "px";
+    if (underline) {
+      underline.style.width = event.currentTarget.offsetWidth + "px";
+      underline.style.left = event.currentTarget.offsetLeft + "px";
+    } else {
+      console.error("Element with id 'underline' not found.");
+    }
   }
 }
+

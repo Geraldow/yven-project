@@ -599,3 +599,96 @@ body {
         margin: 30px 35px;
     }
 }
+
+/* Reseñas */
+
+.slider-container-resenas {
+    position: relative;
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .slider-resenas {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card-resenas {    
+    height: 360px;
+    flex: 0 0 calc(100% / 4);
+    min-width: calc(100% / 4);
+    background-color: #46a19c65;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+
+  .prev-btn {
+    left: 10px; /* Ajustar según sea necesario */
+  }
+  
+  .next-btn {
+    right: 10px; /* Ajustar según sea necesario */
+  }
+  
+  .card-resenas img {
+    align-items: center;
+    text-align: center;
+    width: 130px; /* Tamaño pequeño */
+    height: 130px; /* Tamaño pequeño */
+    margin: 20px;
+  }
+
+  .card-resenas h2 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .card-resenas p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+
+
+  /* Ajustar el número de cartas mostradas en función del ancho de la pantalla */
+@media screen and (max-width: 1368px) {
+    .card-resenas {
+      flex: 0 0 calc(100% / 3); /* Muestra 3 cartas a la vez */
+      min-width: calc(100% / 3);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .card-resenas {
+      flex: 0 0 calc(100% / 2); /* Muestra 2 cartas a la vez */
+      min-width: calc(100% / 2);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .card-resenas {
+      flex: 0 0 calc(100% / 1); /* Muestra 2 cartas a la vez */
+      min-width: calc(100% / 1);
+    }
+  }

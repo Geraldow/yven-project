@@ -145,7 +145,152 @@
 
 
     </section>
-
+<section>
+    <!-- Enfoque Eventos -->
+    <div class="tabs-container">
+        <div class="tabs">
+          <button class="tablink" onclick="openTab('todos', event)">Todos</button>
+          <button class="tablink" onclick="openTab('celebraciones', event)">Celebraciones de Vida</button>
+          <button class="tablink" onclick="openTab('religiosas', event)">Celebraciones Religiosas</button>
+          <button class="tablink" onclick="openTab('graduaciones', event)">Graduaciones</button>
+          <div id="underline"></div>
+        </div>      
+        <div id="todos" class="tabcontent">
+          <!-- Contenido para Todos los eventos -->
+          <div class="grid-container">
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3 class="#">BAUTIZO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
+              </div>
+              <img src="img/img-categoria1.png" alt="Imagen 1">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Cumpleaños</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
+              </div>
+              <img src="img/img-categoria2.png" alt="Imagen 2">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Despedida de Soltero</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
+              </div>
+              <img src="img/img-categoria3.png" alt="Imagen 3">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Quinceaños</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
+              </div>
+              <img src="img/img-categoria4.png" alt="Imagen 4">
+            </div>
+            <div class="card-ventajas">
+                <div class="card-text">
+                  <h3>Graduación Universitaria</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
+                </div>
+                <img src="img/img-categoria5.png" alt="Imagen 3">
+              </div>
+              <div class="card-ventajas">
+                <div class="card-text">
+                  <h3>Confirmación</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
+                </div>
+                <img src="img/img-categoria6.png" alt="Imagen 3">
+              </div>
+          </div>
+        </div>
+      
+        <div id="celebraciones" class="tabcontent" style="display:none;">
+          <!-- Contenido para Celebraciones de Vida -->
+          <div class="grid-container">
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Quinceaños</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aliquid.</p>
+              </div>
+              <img src="img/img-categoria4.png" alt="Imagen 5">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Cumpleaños</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, excepturi.</p>
+              </div>
+              <img src="img/img-categoria2.png" alt="Imagen 6">
+            </div>
+            <div class="card-ventajas">
+                <div class="card-text">
+                  <h3>Despedida de Soltero</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, pariatur!</p>
+                </div>
+                <img src="img/img-categoria3.png" alt="Imagen 6">
+              </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Cumpleaños de Mascota</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, ratione.</p>
+              </div>
+              <img src="img/img-categoria7.png" alt="Imagen 7">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Baby Shower</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, deserunt.</p>
+              </div>
+              <img src="img/img-categoria8.png" alt="Imagen 8">
+            </div>
+          </div>
+        </div>      
+        <div id="religiosas" class="tabcontent" style="display:none;">
+          <!-- Contenido para Celebraciones Religiosas -->
+          <div class="grid-container">
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>BAUTIZO</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cumque?</p>
+              </div>
+              <img src="img/img-categoria1.png" alt="Imagen 9">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Primera Comunion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, suscipit?</p>
+              </div>
+              <img src="img/img-categoria9.png" alt="Imagen 10">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Confirmación</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, deserunt.</p>
+              </div>
+              <img src="img/img-categoria6.png" alt="Imagen 11">
+            </div>
+          </div>
+        </div>
+        <div id="graduaciones" class="tabcontent" style="display:none;">
+          <!-- Contenido para Graduaciones -->
+          <div class="grid-container">
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Graduación Universitaria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, architecto.</p>
+              </div>
+              <img src="img/img-categoria5.png" alt="Imagen 12">
+            </div>
+            <div class="card-ventajas">
+              <div class="card-text">
+                <h3>Secundaria</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, voluptatibus!</p>
+              </div>
+              <img src="img/img-categoria10.png" alt="Imagen 13">
+            </div>
+          </div>
+        </div>
+    </div>
+      
+</section>
     <!-- Sección Ventajas Yven Slider -->
     <section class="ventajas-container pt-24 my-8">
         <h2 class="text-white title-ventajas my-8 font-sansation">CONOCE LAS VENTAJAS DE USAR YVEN</h2>

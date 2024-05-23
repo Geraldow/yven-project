@@ -54,6 +54,9 @@ body {
 .content {
     margin-left: 250px;
     padding: 20px;
+    background-color: #1a182265;
+    margin-right: 2em;
+    border-radius: 0.8em;
 }
 .navbar .profile {
     display: flex;
@@ -101,4 +104,30 @@ body {
 .logout{
     position: absolute;
     bottom: 20px;
+}
+
+
+.icons_b{
+    background-color: #46A19C;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+
+.card{
+    background-image: radial-gradient(circle at top left  rgba(148, 57, 99, 0.226) 20%, #46A19C 60%) ;
+    background-size: 100% 200%;
+    background-color: #1a182265;    
+}
+
+.star-svg path{
+    fill:#B6487A;
+}
+
+.star-svg-none path{
+    stroke:#B6487A;
+    fill: none;
+}
+
+.card-bg{
+    background-color: #38314B;
 }

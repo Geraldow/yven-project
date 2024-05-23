@@ -16,19 +16,53 @@ function moveToSelected(element) {
 
 var interval = setInterval(autoChange, 3000);
 
+const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('#nextBtn');
+const prevButton = document.querySelector('#prevBtn');
+const indicators = document.querySelectorAll('.carousel-indicators button');
+const slideWidth = slides[0].getBoundingClientRect().width;
 
-  $('#carousel div').click(function () {
-    clearInterval(interval); // Detiene el intervalo antes de mover a la siguiente imagen
-    moveToSelected($(this));
+let currentSlide = 0;
+
+// Arrange the slides next to one another
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px';
+};
+slides.forEach(setSlidePosition);
+
+const updateIndicators = (currentIndex) => {
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === Math.floor(currentIndex / 4));
+    });
+};
+
+const moveToSlide = (track, currentSlide, targetSlideIndex) => {
+    track.style.transform = 'translateX(-' + slideWidth * targetSlideIndex + 'px)';
+    currentSlide = targetSlideIndex;
+    updateIndicators(currentSlide);
+};
+
+// When I click next, move slides to the left
+nextButton.addEventListener('click', e => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    moveToSlide(track, currentSlide, currentSlide);
 });
 
-$('#prev').click(function () {
-    clearInterval(interval); // Detiene el intervalo antes de mover a la imagen anterior
-    moveToSelected('prev');
+// When I click prev, move slides to the right
+prevButton.addEventListener('click', e => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    moveToSlide(track, currentSlide, currentSlide);
 });
 
-$('#next').click(function () {
-    clearInterval(interval); // Detiene el intervalo antes de mover a la siguiente imagen
-    moveToSelected('next');
-  });
-  
+// When I click an indicator, move to that slide
+indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', e => {
+        const targetIndex = index * 4;
+        moveToSlide(track, currentSlide, targetIndex);
+        currentSlide = targetIndex;
+    });
+});
+
+// Initial update for indicators
+updateIndicators(currentSlide);

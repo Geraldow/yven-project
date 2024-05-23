@@ -114,28 +114,61 @@ body {
     bottom: 20px;
 }
 
-
-
-.icons_b{
-    background-color: #46A19C;
-    padding: 12px;
-    margin-bottom: 5px;
+/* Carrusel de categorias */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    min-height: 280px;
+    max-height: 360px;
+    overflow: hidden;
 }
 
-.card{
-    background-image: radial-gradient(circle at top left  rgba(148, 57, 99, 0.226) 20%, #46A19C 60%) ;
-    background-size: 100% 200%;
-    background-color: #1a182265;    
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.star-svg path{
-    fill:#B6487A;
+.carousel-item {
+    max-width: 100px;
+    min-width: 22%;
+    max-height: 320px;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
 }
 
-.star-svg-none path{
-    stroke:#B6487A;
-    fill: none;
+.carousel-item img {
+    width: 100%;
+    height: 60%;
+  object-fit:fill;
+    border-radius: 8px;
+    padding: 0 0 2px 0;
 }
 
-.card-bg{
-    background-color: #38314B;}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 56px;
+}
+
+.carousel-indicators button {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.carousel-indicators .active {
+    background: #F8F8F8; 
+
+}

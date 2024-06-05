@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/src/img/logo-tramnsparentes-2.png" type="image/x-icon">
     <link href="../../output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../css/styles-dashboard/home.css">
     <link rel="stylesheet" href="../../css/globalStyles.css">
+    <link rel="stylesheet" href="/src/css/styles-dashboard/notification.css">
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
     <title>Yven -</title>
 </head>
@@ -66,7 +68,7 @@
             </div>
             <div class="flex items-center">
                 <i class="fas fa-comment-alt text-white mx-4 cursor-pointer hover:text-teal-400"></i>
-                <i class="fas fa-bell text-white mx-4 cursor-pointer hover:text-teal-400"></i>
+                <button class="btn-open"><i class="fas fa-bell text-white mx-4 cursor-pointer hover:text-teal-400"></i></button>
                 <div class="flex items-center cursor-pointer">
                     <img src="../../../public/assets/images/alberta.jpeg" alt="Profile Picture"
                         class="profile rounded-full mr-2">
@@ -75,9 +77,52 @@
                 </div>
             </div>
         </nav>
+        <!-- Notifiaction Active Container -->
+        <section>
+            <dialog class="dialog">
+                <div class="container-notification">
+                   <div class="close-title">
+                        <button class="btn-close"><i class="fa-solid fa-chevron-left"></i></button><button class="btn-close"></button>
+                        <h3 class="title-notification">Notificaciones</h3>
+                   </div>
+                   <hr class="line-noti">
+                   <nav class="nav-noti">
+                        <button class="tab-button active" data-tab="todos">Todos <span>8</span></button>
+                        <button class="tab-button" data-tab="proveedor">Proveedores <span>3</span></button>
+                        <button class="tab-button" data-tab="promociones">Promociones <span>15</span></button>
+                   </nav>
+                   <div class="content-noti">
+                        <div class="tab-content" id="todos">
+                           <div class="card-noti">
+                                <div class="card-dates">
+                                    <img src="/src/img/User-1.png" alt="">
+                                    <h4 class="user-name" id="user-name">CHRISTINA MORILLO</h4>
+                                    <h5 class="user-message" id="user-message">te envio un mensaje</h5>                            
+                                    <a href="#" class="email-user">christinamori@gmail.com</a>
+                                </div>
+                                <div class="card-message">
+                                    <h3>¿Qué te parecio mi servicio como Proveedor?</h3>
+                                    <p>Califica mis secciones en la sección reseñas 🥰</p>
+                                    <a href="#">Ir a Reseñas <i class="fa-solid fa-chevron-right link-page-message"></i></a>                                    
+                                </div>
+                                <div class="time-message">                                                                                                   
+                                    <i class="fa-solid fa-circle spot"></i>
+                                    <span id="time-message">hace 2 horas</span>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="tab-content" id="proveedor">
+                           
+                        </div>
+                        <div class="tab-content" id="promociones">
+                    
+                        </div>
+                </div>
+                </div>
+            </dialog>
+        </section>
 
         <section class="dashboard mt-12">
-
             <!-- Contenido principal -->
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                 <!-- Carousel wrapper -->
@@ -601,7 +646,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="../../js/slider.js"></script>
-
+    <script src="/src/js/notification.js"></script>
 </body>
 
 </html>

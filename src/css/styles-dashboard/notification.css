@@ -14,7 +14,8 @@
 }
 
 .container-notification {
-    height: 95vh;
+    min-height: 95vh;
+    max-height: 1500px;
     width: 600px;
     align-items: center;
     background-color: var(--secondary-color);
@@ -42,6 +43,7 @@
 .line-noti {
     margin: 10px 0 10px 0;
     border: 0.5px solid rgba(255, 255, 255, 0.375);
+    display: flex;
 }
 
 /* Nav Notificaciones */
@@ -74,12 +76,11 @@
     border-radius: 3px;    
 } 
 
-.content-noti {
-    flex: 1;
-    padding: 20px;
-    align-items: center;
-}
+/* Contenido de mensajes de Usuarios, Eventos (Cartas)*/
 
+.content-noti {
+    padding: 20px;
+}
 
 .tab-content {
     display: none;
@@ -90,9 +91,9 @@
 }
 
 .card-noti {
-    height: 130px;
-    max-height: 200px;
-    margin: 0;
+    min-height: 70px;
+    max-height: 600px;
+    margin: 10px 0;
     padding: 5px 10px;
     background-color: #46a19c1c;
     border: 1px solid rgba(128, 128, 128, 0.223);
@@ -100,49 +101,74 @@
     position: relative;
 }
 
-.card-dates{
+.dates-user{
     display: flex;
+    position: relative;
 }
 
-.card-dates > img {
+.dates-user > img {
     height: 50px;
 }
 
-.card-dates > h4{
+.dates-user > h4{
     margin: 0 5px;
     font-weight: 600;
+    
 }
 
-.card-dates > h5 {
+.dates-user > h5 {
     color: var(--color-messageUser);
 }
 
 .email-user {
     position: absolute;
-    top: 19%;
-    left: 11.5%;
+    top: 38%;
+    left: 10%;
     color: var(--color-emailUser);
 }
 
 .card-message > p {
+    line-height: 18px;
     font-size: 15px;
     margin: 0 15px;
     color: var(--color-messageUser);
+    margin: 5px 0 5px 10px;
+    padding-right: 85px;
 }
 
 .card-message  a, i{
     color: var(--color-greenLight);
 }
 
+.card-message > h3 {
+    font-size: 18px;
+    font-weight: 520;
+    padding-right: 80px;
+    line-height: 20px;
+    margin-top: 7px;
+}
+
+.card-message > .images-noti {
+    display: flex;
+    margin: 5px 0 5px 10px;    
+    height: 90px;    
+}
+
+.images-noti > img {
+    margin: 0 10px 0 0;
+}
+
 .time-message {
     position:absolute;
     right: 5%;
-    bottom: 5%;
+    bottom: 3%;
 }
 
 .spot {
     position: absolute;
     display: block;
     bottom: 100%;
-    right: 02%;
+    right: 2%;
 }
+
+

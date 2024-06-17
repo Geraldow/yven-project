@@ -1,7 +1,13 @@
+:root {
+    --color-purple: #8a5796;
+    --color-dark-green: #46A19C;
+    --color-dark-red: #9C3C68;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 /*Estilos de navbar*/
 .profile{
     width: 3rem!important;
@@ -10,40 +16,48 @@ body {
 .options-profile i{
     font-size: 1.2rem;
 }
-.sidebar {
+
+/* Estilos de sidebar left */
+.toggle-button-left{
+    display: none;
+}
+.content-sidebar{
+    padding-top: 10%;
+}
+.sidebar-menu {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 220px;
+    width: 18%;
     overflow-x: hidden;
     padding: 20px 16px;
     color: white;
     z-index: 1000;
     
 }
-.sidebar a {
+.sidebar-menu a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
     color: white;
     display: block;
 }
-.sidebar a:hover {
+.sidebar-menu a:hover {
     background-color: #46a19c75;
     border-radius: 1rem;
  
 }
-.sidebar a:hover i {
+.sidebar-menu a:hover i {
     color: #46a19c;
 }
-.sidebar a:hover i,
-.sidebar a.active i {
+.sidebar-menu a:hover i,
+.sidebar-menu a.active i {
     color: #46a19c;
 }
 
-.sidebar a:hover,
-.sidebar a.active {
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
     background-color: #46a19c75;
     border-radius: 1rem;
 }
@@ -85,11 +99,30 @@ body {
 }
 
 .right-section{
-    width: 25%;
+    width: 280px;
 }
-@media screen and (max-width: 768px) {
-    .sidebar {
-        display: none;
+#toggleButtonLeft{
+    display: none;
+}
+@media (max-width: 768px) {
+    .sidebar-right {
+        transform: translateX(100%)!important;
+    }
+
+    .sidebar-righ.show {
+        transform: translateX(0)!important;
+    }
+
+    #toggleButton {
+        display: inline-flex!important;
+    }
+    .toggle-button-left{
+        display: block;
+    }
+}
+@media screen and (max-width: 801px) {
+    .sidebar-menu-left{
+        visibility: hidden;
     }
     .content {
         margin-left: 0;
@@ -106,6 +139,37 @@ body {
         border: none;
         cursor: pointer;
     }
+    .bar-search {
+        display: none;
+    }
+    .user-perfil{
+        display: none;
+    }
+
+    .grid-content-navbar{
+        grid-column: 1 / 11!important;
+        margin-bottom: 0!important;
+    }
+    .grid-content{
+        grid-column: 1 / 11!important;
+        margin-bottom: 0!important;
+    }
+    
+    #toggleButtonLeft{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1080px){
+
+    .grid-content{
+        grid-column: 1 / 11;
+        margin-bottom: 0!important;
+    }
+    span{
+        font-size: 14px!important;
+    }
+   
 }
 
 /*Empiezan estilos de la estructura del menu*/
@@ -114,7 +178,7 @@ body {
     bottom: 20px;
 }
 
-/* Carrusel de categorias */
+/* Carrusel  */
 .carousel-container {
     position: relative;
     width: 100%;
@@ -129,46 +193,158 @@ body {
 }
 
 .carousel-item {
-    max-width: 100px;
-    min-width: 22%;
-    max-height: 320px;
+    width: 300px;
     padding: 0 10px 0 0;
     box-sizing: border-box;
 }
 
-.carousel-item img {
+
+
+
+/* Contenido central */
+
+.grid-container{
+    display: grid;
+  grid-template-columns: repeat(10, 1fr); /* Tres columnas de igual ancho */
+  grid-template-rows: auto; /* Altura automática basada en el contenido */
+  gap: 8px; /* Espacio entre los elementos */
+  padding: 0 1rem;
+}
+
+.grid-content-navbar{
+    grid-column: 3 / 11;
+}
+.grid-content{
+    grid-column: 3 / 9;
+}
+
+
+
+
+
+/* Carrusel de categorias */
+#carousel-container {
+    max-width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
     width: 100%;
-    height: 60%;
-  object-fit:fill;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 25%; /* Adjust based on the number of images to show per view */
+    height: 100%;
+    margin-right: 2px;
+}
+.carousel-item h2 {
+    line-height: normal;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    height: 200px;
     border-radius: 8px;
     padding: 0 0 2px 0;
 }
-
-.carousel-controls {
+.carousel-control {
     position: absolute;
     top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     transform: translateY(-50%);
-}
-
-
-.carousel-indicators {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    bottom: 56px;
-}
-
-.carousel-indicators button {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     border: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
-    margin: 0 5px;
+    z-index: 10;
 }
-.carousel-indicators .active {
-    background: #F8F8F8; 
 
+.left-0 {
+    left: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.indicator {
+    transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+    background-color: var(--color-dark-green);
+}
+
+
+/* Carrusel de promociones*/
+#carousel-container-promo {
+    max-width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 12px;
+}
+.carousel-item-promo{
+    flex: 0 0 auto;
+    width: 30%; 
+    height: 100%;
+    margin-right: 8px;
+}
+.carousel-item-promo h2 {
+    line-height: normal;
+}
+.carousel-item-promo img {
+    height: 200px;
+    border-radius: 8px;
+    padding: 0 0 2px 0;
+}
+.carousel-image-promo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.indicator-promo {
+    transition: background-color 0.3s ease;
+}
+
+.indicator-promo.active {
+    background-color:  var(--color-dark-green);
+}
+.carousel-control-promo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+@media (max-width: 1024px) {
+    .carousel-item {
+        width: 33.33%; /* Show 3 images per view on medium screens */
+    }
+    .carousel-item-promo {
+        width: 35.33%; /* Show 3 images per view on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 50%; /* Show 2 images per view on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        width: 100%; /* Show 1 image per view on extra small screens */
+    }
 }

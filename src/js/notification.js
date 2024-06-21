@@ -39,3 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mostrar por defecto la pestaña "Todos"
     showTab('todos');
 });
+
+
+const modalProfile = document.querySelector('.dialog-profile')
+
+const btnOpenProfile = 
+    document.querySelector('.btn-open-profile').addEventListener('click', ()=> modalProfile.showModal());
+
+const btnCloseProfile = 
+    document.querySelector('.btn-close-profile').addEventListener('click', ()=> modalProfile.close());

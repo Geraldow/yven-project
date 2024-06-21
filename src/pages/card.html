@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link href="../css/generales.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2ac020bc7.js" crossorigin="anonymous"></script>
+
+    <title>Método de Pago</title>
+</head>
+
+<body>
+    <hgroup class="container mx-auto max-w-xl mt-16">
+        <h2 class="text-center text-4xl text-white font-bold mb-4">Agrega un Tarjeta</h2>
+        <p class="text-center text-2xl place-content-center text-white mb-8">Continúa tu compra.</p>
+    </hgroup>
+    <div class="container bg-dark-transparent  mx-auto max-w-xl p-4 shadow-md rounded-lg border border-gray-700">
+
+        <div class="flex items-center justify-center space-x-3 ">
+            <i class="fa-solid fa-credit-card text-4xl" style="color: #ffffff;"></i>
+            <h2 class="text-white text-xl mb-2 mt-3">Tarjeta de Débito/Crédito</h2>
+        </div>
+
+        <div class="flex flex-row">
+            <hr class="w-96 h-1 mx-auto my-4 bg-gray-600 border-0 rounded md:my-10 mt-2">
+        </div>
+
+
+
+
+        <form class="max-w-sm mx-auto">
+            <div class="mb-5">
+                <label for="email" class="block mb-2 text-xl font-medium text-white">Titular</label>
+                <input type="email" id="email"
+                    class="bg-dark-transparent border border-gray-500 text-gray-900 text-md rounded-lg   block w-full p-2.5"
+                    placeholder="Nombres y Apellidos" required />
+            </div>
+            <div class="mb-5">
+                <label for="password" class="block mb-2 text-xl font-medium text-white">Número de la Tarjeta</label>
+                <input type="password" id="password"
+                    class="bg-dark-transparent border border-gray-500 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="XXXX-XXXX-XXXX-XXXX"
+                    required />
+            </div>
+
+            <div class="grid md:grid-cols-2 md:gap-6">
+                <div class="mb-5">
+                    <label for="password" class="block mb-2 text-xl font-medium text-white">Vencimiento</label>
+                    <input type="password" id="password"
+                        class="bg-dark-transparent border border-gray-500 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="__/___"
+                        required />
+                </div>
+                <div class="mb-5">
+                    <label for="password" class="block mb-2 text-xl font-medium text-white">CVV</label>
+                    <input type="password" id="password"
+                        class="bg-dark-transparent border border-gray-500 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="---"
+                        required />
+                </div>
+              </div>
+
+
+            <div class="flex items-start mb-5">
+                <div class="flex items-center h-5">
+                    <input id="remember" type="checkbox" value=""
+                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                        required />
+                </div>
+                <label for="remember" class="ms-2 text-sm font-medium text-white">Guardar los datos de mi tarjeta</label>
+            </div>
+            <a href="./dashboard/home.html">
+                <button type="submit" id="" class="w-full  text-white font-bold py-2 mt-2 mb-4 rounded-lg hover:bg-gray-800 bg-primary  hover:bg-secondary">
+                 FINALIZAR COMPRA
+                </button>
+              </a>
+        </form>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>

@@ -6,12 +6,19 @@
     font-family: 'Sansation';
     src: url('../public/fonts/Sansation_Regular.ttf') format('truetype');
   }
-  
+ @font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  }
+ 
 body {
-    background-image: url('../../public/assets/background/background.svg')!important;
+    background-image: url('../../public/assets/background/Hero\ Stack.png')!important;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Sansation', Arial, Helvetica, sans-serif;
+    background-position: center; 
+    background-attachment: fixed;
+    font-family: 'Sansation', Arial, Helvetica, sans-serif; 
 }
 
 :root{

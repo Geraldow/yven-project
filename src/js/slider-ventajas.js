@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let scrollAmount = 0;
 
   nextBtn.addEventListener("click", function () {
-    scrollAmount += slider.offsetWidth / 4;
+    scrollAmount += slider.offsetWidth / 1;
     if (scrollAmount > slider.scrollWidth - slider.offsetWidth) {
       scrollAmount = slider.scrollWidth - slider.offsetWidth;
     }
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   prevBtn.addEventListener("click", function () {
-    scrollAmount -= slider.offsetWidth / 4;
+    scrollAmount -= slider.offsetWidth / 1;
     if (scrollAmount < 0) {
       scrollAmount = 0;
     }

@@ -7,21 +7,15 @@
     src: url('../public/fonts/Sansation_Regular.ttf') format('truetype');
   }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 :root {
-    --color-purple: #8a5796;
-    --color-dark-green: #46A19C;
-    --color-dark-red: #9C3C68;
+    --color-secondary: #C41BA2;
+    --color-dark-blue: #370C94;
+    --color-third: #4442B6;
+    --color-third-opacity: #4442b61c;
 }
 
-body {
-    background-image: url(/public/assets/background/background.svg);
-}
 
 /* Sección Eventos */
 
@@ -44,7 +38,9 @@ body {
   }
   
   .tablink {
-    font-size: 23px;
+    font-size: 24px!important;
+    font-family: 'Montserrat';
+    font-weight: 300;
     border: none;
     cursor: pointer;
     margin: 0 10px;
@@ -72,11 +68,14 @@ body {
   
 
   #underline {
-    height: 3px;
-    border-bottom: 2px solid var(--color-dark-green);
+    height: 2px;
+    width: 50px;
+    border-bottom: 6px solid var(--color-dark-blue);
     transition: width 0.3s ease, left 0.3s ease;
     position: absolute;
     bottom: -5px;
+    border-radius: 5px;
+    box-shadow: var(--color-third);
   }
   
   .grid-container {
@@ -92,12 +91,11 @@ body {
   .card-ventajas {
     border-radius: 10px;
     display: flex;
-    background: #46a19c39;
+    background: var(--color-third-opacity);
     text-align: center;
     width: 100%; 
     height: 200px; 
     box-sizing: border-box;
-    border: 1px solid rgb(221, 221, 221);
   }
   
   .card-ventajas img {
@@ -236,7 +234,10 @@ body {
   
 /* Sección Ventajas Yven Slider */
 
-
+.title-ventajas h2 {
+    font-family: 'Montserrat, arial';
+    font-size: 64px!important;
+ }
 
 .container {
     display: flex;
@@ -311,7 +312,7 @@ body {
 }
 
 .card-data {
-    background: linear-gradient(rgba(5,5,5, 0.4), rgba(5,5,5, 0.6)) var(--color-dark-green);
+    background: linear-gradient(rgba(5,5,5, 0.4), rgba(5,5,5, 0.6)) var(--color-dark-blue);
     padding: 1.5rem 2rem;
     text-align: center;
     position: relative;
@@ -334,7 +335,7 @@ body {
     width: initial;
     height: initial;
     font-size: 3rem;
-    color: var(--color-dark-green);
+    color: var(--color-dark-blue);
     display: none;
 }
 
@@ -354,7 +355,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: var(--color-dark-green);
+    background-color: var(--color-dark-blue);
 }
 
 @media screen and (max-width: 320px) {
@@ -385,9 +386,12 @@ body {
 /* Sección Nosotros */
 
 .val-noso {
-    font-size: 45px;
+    font-size: 64px;
     font-weight: 300;
-    margin: 0 0 10px 10%;
+    
+    font-family: 'Montserrat';
+    font-weight: 400;
+    
 }
 
 .container-mivi {
@@ -537,15 +541,15 @@ body {
 }
 
 .card-green {
-    background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)) var(--color-dark-green);
+    background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)) var(--color-dark-blue);
 }
 
-.card-purple {
-    background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)) var(--color-purple);
+.card-secondary {
+    background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)) var(--color-third);
 }
 
 .card-red {
-    background: linear-gradient(rgba(5,5,5, 0.3), rgba(5,5,5, 0.3)) var(--color-dark-red);
+    background: linear-gradient(rgba(5,5,5, 0.3), rgba(5,5,5, 0.3)) var(--color-third);
 }
 
 .title-valores{
@@ -560,46 +564,7 @@ body {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1615px) {
-    .container-valores {
-        display: grid;
-        margin: 0 10%;
-    }
-}
 
-@media screen and (max-width: 1235px) {
-    .container-valores {
-        display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        margin: 0 20px;
-    }   
-
-    .title-valores {
-        line-height: 30px;
-        font-size: 27px;
-    }
-
-    .text-valores {
-        font-size: 19px;
-    }
-
-    .three-containers {
-        padding: 10px;
-    }
-}
-
-@media screen and (max-width: 830px) {
-    .container-valores {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .val-noso {
-        font-size: 32px;
-        margin: 10px 35px;
-    }
-}
 
 /* Reseñas */
 
@@ -615,13 +580,11 @@ body {
     transition: transform 0.5s ease;
   }
   
-  .card-resenas {    
-    height: 360px;
-    flex: 0 0 calc(100% / 4);
-    min-width: calc(100% / 4);
-    background-color: #46a19c65;
+  .card-resenas {  
+    flex: 0 0 calc(100% / 1);
+    min-width: calc(100% / 1);
+
     border-radius: 5px;
-    margin: 0 5px;
     padding: 0px;
     text-align: center;
     display: flex;
@@ -649,34 +612,18 @@ body {
   .next-btn {
     right: 10px; /* Ajustar según sea necesario */
   }
-  
-  .card-resenas img {
-    align-items: center;
-    text-align: center;
-    width: 130px; /* Tamaño pequeño */
-    height: 130px; /* Tamaño pequeño */
-    margin: 20px;
-  }
+ 
 
-  .card-resenas h2 {
-    color: white;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+
   
-  .card-resenas p {
-    font-size: 14px;
-    color: white;
-    margin-bottom: 50px;
-  }
 
 
 
   /* Ajustar el número de cartas mostradas en función del ancho de la pantalla */
 @media screen and (max-width: 1368px) {
     .card-resenas {
-      flex: 0 0 calc(100% / 3); /* Muestra 3 cartas a la vez */
-      min-width: calc(100% / 3);
+      flex: 0 0 calc(100% / 2); /* Muestra 3 cartas a la vez */
+      min-width: calc(100% / 2);
     }
   }
   
@@ -693,3 +640,104 @@ body {
       min-width: calc(100% / 1);
     }
   }
+  .card-nosotros {
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 16px; /* Add margin bottom to separate cards on small screens */
+}
+
+.card-nosotros img {
+    width: 25px;
+    height: 25px;
+    box-shadow: 0px 0px 18.227333068847656px rgba(149, 37, 201, 0.75);
+}
+
+.card-content-nosotros {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.card-title {
+    align-self: stretch;
+    color: #ECECEC;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    word-wrap: break-word;
+}
+
+.card-description {
+    align-self: stretch;
+    color: #ECECEC;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.card-footer {
+    padding-top: 8px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.card-footer .view-tokens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-footer .view-tokens div {
+    color: white;
+    font-size: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 12px;
+    word-wrap: break-word;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .card-nosotros {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-nosotros {
+        width: calc(50% - 1.5rem); /* Half width with spacing */
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-valores .card-nosotros {
+        width: calc(33.3333% - 1.5rem); /* One third width with spacing */
+    }
+}
+
+/* LLamada a la acción */
+.card-accion {
+    padding: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0px 0.25px 0px rgba(255, 255, 255, 0.50) inset;
+    border-radius: 20px;
+    gap: 8px;
+    margin-bottom: 16px; /* Add margin bottom to separate cards on small screens */
+}

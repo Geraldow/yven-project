@@ -5,16 +5,18 @@ module.exports = {
     extend: {
       colors: {
         'bg_dark': '#201A30',
-        'dark-transparent': 'rgba(27, 27, 27, 0.3)', 
+        'dark-transparent': 'rgba(27, 27, 27, 0.6)', 
         'light-color': '#F8F8F8',
-        'primary': '#46a19c',
-        'secondary': '#943963',
-        'third': '#8A5796',
+        'primary': '#370C94',
+        'secondary': '#C41BA2',
+        'third': '#4442B6',
         'line_light': '#CCCCCC',
       },
       fontFamily: {
         sansation: ['Sansation', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
+     
       borderRadius: {
         'none': '0',
         DEFAULT: '4px',
@@ -24,6 +26,9 @@ module.exports = {
         '128': '32rem',
         '256': '256px',
       },
+      height: {
+        '128': '32rem',
+      }
     },
     screens: {
       'xs': {'min':'400px', 'max': '766px'},

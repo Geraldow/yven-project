@@ -1,18 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 :root {
-  --color-purple: #8a5796;
-  --color-dark-green: #46A19C;
-  --color-dark-red: #9C3C68;
+  --color-secondary: #C41BA2;
+  --color-dark-blue: #370C94;
+  --color-third: #4442B6;
+  --color-third-opacity: #4442b61c;
+  --color-light: #F8F8F8;
 }
+
 body {
   overflow-x: hidden;
 }
+p{
+  font-family:'Montserrat';
+  color: var(--color-light)!important;
+}
+button{
+  font-size: 18px!important;
+}
+h2{
+  font-size: 64px;
+}
+
+.parrafos{
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+blockquote p{
+  font-size: 20px!important;
+}
+
+
+/* Main Content */
+
+.container-text-primary  {
+  height: 700px;
+
+     font-size: 2.6rem;
+     line-height: 1.1;
+ 
+   }
+
+.container-text-primary h1 {
+  padding-bottom: 1em;
+     font-size: 2.6rem;
+     line-height: 1.1;
+ 
+   }
+   .position-media{
+    top: 220px;
+   }
 
 @media screen and (max-width: 800px) {
   section .container-text-primary {
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 90% !important;
-    margin-right: 16px !important;
   }
 
   .primary-section {
@@ -115,18 +159,18 @@ body {
 
   }
 
-  .title-ventajas {
-   
-    font-size: 36px;
+  .title-ventajas h2 {
+   font-family: 'Montserrat, arial';
+    font-size: 36px!important;
 }
 }
 
 #carousel {
-  position: relative;
+  position: block;
   min-height: 600px;
-  max-height: 900px;
+ 
   padding-bottom: 12px;
-  top: 50px;
+  bottom: 0px;
 }
 
 #carousel div.prev img,
@@ -137,10 +181,11 @@ body {
 
 #carousel div.selected img {
   opacity: 1;
-
+  position: relative;
 }
 
 #carousel div {
+  
   position: absolute;
   transition: transform 1s, opacity 1s, z-index 0s;
   opacity: 1;
@@ -149,8 +194,8 @@ body {
 
 #carousel div.prev {
   z-index: 5;
-  left: 30%;
-  transform: translateY(-110%) translateX(50%);
+  left: 700%;
+  transform: translateY(-100%) translateX(50%);
 
 }
 
@@ -165,7 +210,7 @@ body {
 
 #carousel div.selected {
   z-index: 10;
-  left: 45%;
+  left: 85%;
   transform: translateY(-50%) translateX(-50%);
   box-shadow: 5px 0px 20px rgba(29, 29, 29, 0.5);
   /* Agrega una sombra que se desplaza hacia la derecha */
@@ -174,7 +219,7 @@ body {
 
 #carousel div.next {
   z-index: 5;
-  left: 30%;
+  left: 70%;
   transform: translateY(10%) translateX(50%);
 
 }
@@ -193,7 +238,7 @@ body {
 
   body{
     margin: 0 1rem;
-    padding:  0 1rem;
+    
   }
 
   p{
@@ -210,4 +255,37 @@ body {
 .custom-background {
   background: linear-gradient(to right, #26414095, #203a3ac8, rgba(0, 0, 0, 0.389));
   
+}
+
+/* Video */
+
+.video {
+  transition: all 0.5s ease;
+}
+
+.video.active {
+  width: 70%;
+  margin-left: 0;
+}
+
+.video.inactive {
+  width: 30%;
+  margin-left: auto;
+}
+
+
+/* Experiencias */
+
+.experiences{
+  padding: 10px 28px;
+}
+.container-stream{
+  align-self: self-start!important;
+  margin: 10px 5px;
+  display: contents;
+}
+.container-stream img{
+  max-height: 170px;
+  height: 110px;
+  min-height: 100px;
 }

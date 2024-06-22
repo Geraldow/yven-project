@@ -6,9 +6,12 @@
     <title>Registrarse - Yven</title>
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/globalStyles.css">
+    <link rel="shortcut icon" href="../../public/assets/images/favicon-yven.svg" type="image/x-icon">
     <link href="../css/generales.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b2ac020bc7.js" crossorigin="anonymous"></script>
-  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/auth/register_validations.js"></script>
+
 </head>
 <body> 
 
@@ -44,32 +47,32 @@
     
       
         <form class="flex flex-col">
-          <input type="text" id="registerName" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Nombres" required>
+          <input type="text" id="registerName" class="border rounded-md p-2 pl-4 bg-transparent" placeholder="Nombres" required>
           <br>
 
-          <input type="text" id="registerLastname" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Apellidos" required>
+          <input type="text" id="registerLastname" class="border rounded-md p-2 pl-4 bg-transparent" placeholder="Apellidos" required>
           <br>
 
-          <input type="email" id="registerEmail" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Registrarse tu correo electrónico" required>
+          <input type="email" id="registerEmail" class="border rounded-md p-2 pl-4 bg-transparent" placeholder="Registrarse tu correo electrónico" required>
           <br>
           
-          <input type="password" id="registerPassword" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Registrarse tu contraseña" required>
+          <input type="password" id="registerPassword" class="border rounded-md p-2 pl-4 bg-transparent" placeholder="Registrarse tu contraseña" required>
           <br>
 
-          <input type="password" id="registerConfirmPassword" class="border rounded-md p-2 pl-4 custom-bg-color" placeholder="Confirma tu contraseña" required>  
+          <input type="password" id="registerConfirmPassword" class="border rounded-md p-2 pl-4 bg-transparent" placeholder="Confirma tu contraseña" required>  
 
           <div class="flex items-center mt-4">
             <input type="checkbox" id="registerRememberMe" class="mr-2">
             <label for="registerRememberMe" class="text-white">Recuérdame</label>
           </div>
       
-          <button type="submit" class="w-full bg-blue-500 text-white font-bold py-2 mt-4 rounded-lg hover:bg-gray-800 login-color-btn">
+          <button type="submit" class="w-full bg-third text-white font-bold py-2 mt-4 rounded-lg hover:bg-gray-800 login-color-btn">
             Registrarse
           </button>
         </form>
   
         <p class="text-center place-content-center mt-4 text-white">¿Ya tienes una cuenta? <a href="./login.html"><span class="create-new-acc ml-2">Iniciar sesión</span></a></p>
       </div>
-      
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

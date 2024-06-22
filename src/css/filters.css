@@ -1,0 +1,38 @@
+
+.transparent-button {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.transparent-button.selected {
+    background-color: #7C3AED;
+    color: #FFFFFF;
+}
+.tema-cumple {
+    background-color: #3E6068;
+}
+.tema-despedida {
+    background-color: #4C3F96;
+}
+.tema-boda {
+    background-color: #763457;
+}
+.tema-baby {
+    background-color: #483D5F;
+}
+.tema-graduacion {
+    background-color: #6B349C;
+}
+.tema-bautizo {
+    background-color: #4A4D7E;
+}
+.tema-otro {
+    background-color: #4A4D7E;
+}
+.card {
+    background-color: #1F0732;
+}
+
+.border-white {
+    border: 1px solid white;
+}

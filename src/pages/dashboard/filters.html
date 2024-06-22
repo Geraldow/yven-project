@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Filtro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../css/filters.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="custom-bg flex h-screen">
+
+    <main class="flex-1 p-4 overflow-auto">
+        <div class="bg-gray-700 p-4 rounded-lg shadow-md w-full max-w-sm mx-4 md:mx-0 float-right">
+            <h2 class="text-center text-white text-2xl font-bold mb-4">Editar Filtro</h2>
+            
+            <div class="mb-4">
+                <h3 class="text-white font-semibold mb-2 text-base">Temática</h3>
+                <div class="flex flex-wrap gap-2">
+                    <button class="tema-cumple text-white px-3 py-2 rounded-lg text-base">Cumpleaños</button>
+                    <button class="tema-despedida text-white px-3 py-2 rounded-lg text-base">Despedida de soltero</button>
+                    <button class="tema-boda text-white px-3 py-2 rounded-lg text-base">Boda</button>
+                    <button class="tema-baby text-white px-3 py-2 rounded-lg text-base">Baby shower</button>
+                    <button class="tema-graduacion text-white px-3 py-2 rounded-lg text-base">Graduación</button>
+                    <button class="tema-bautizo text-white px-3 py-2 rounded-lg text-base">Bautizo</button>
+                    <button class="tema-otro text-white px-3 py-2 rounded-lg text-base">Otro</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-white font-semibold mb-2 text-base">Estilo del evento</h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <button class="custom-button transparent-button px-3 py-2 rounded-lg text-base">Elegante</button>
+                    <button class="custom-button transparent-button px-3 py-2 rounded-lg text-base">Sofisticado</button>
+                    <button class="custom-button transparent-button px-3 py-2 rounded-lg text-base">Casual</button>
+                    <button class="custom-button transparent-button px-3 py-2 rounded-lg text-base">Temático</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-white font-semibold mb-2 text-base">Cambia el entorno</h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <button class="custom-button transparent-button text-white px-3 py-2 rounded-lg text-base">Espacios al aire libre</button>
+                    <button class="custom-button transparent-button text-white px-3 py-2 rounded-lg text-base">Espacios cerrados</button>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-white font-semibold mb-2 text-base">Cambia el presupuesto</h3>
+                <div class="flex items-center gap-2">
+                    <span class="custom-button custom-border text-white px-3 py-2 rounded-lg text-base border-white">S/</span>
+                    <input type="text" class="custom-button custom-border border-white text-white px-3 py-2 rounded-lg w-full text-base border-white bg-transparent" placeholder="Ingrese su presupuesto">
+                </div>
+                
+            </div>
+
+            <button class="bg-[#46A19C] text-white w-full py-2 rounded-lg text-base">Cambiar</button>
+        </div>
+    </main>
+</body>
+</html>

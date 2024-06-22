@@ -32,7 +32,9 @@ blockquote p{
 
 
 /* Main Content */
-
+.text-mobile{
+  display: none;
+}
 .container-text-primary  {
   height: 700px;
 
@@ -58,6 +60,18 @@ blockquote p{
     flex-direction: column;
     width: 90% !important;
   }
+  .container-text-primary button{
+    margin-top: 2px!important;
+  }
+  .container-text-primary div{
+    margin-top: 24px;
+  }
+  .container-text-primary div div{
+    width: 100%;
+  }
+  .container-text-primary div p{
+    padding-top: 16px!important;
+  }
 
   .primary-section {
     display: block !important;
@@ -76,6 +90,14 @@ blockquote p{
   p {
     display: flex !important;
     line-height: 1.25 !important;
+  }
+  .text-mobile{
+    display: block;
+
+  }
+  .text-desktop{
+    display: none;
+    visibility: hidden;
   }
 }
 

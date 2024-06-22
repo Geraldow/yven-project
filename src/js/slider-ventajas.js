@@ -97,3 +97,4 @@ document.addEventListener("DOMContentLoaded", function () {
     slider.style.transform = `translateX(-${scrollAmount}px)`;
   });
 });
+

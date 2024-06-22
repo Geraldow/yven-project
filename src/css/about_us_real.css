@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 550px; /* Por modificar en el responsive*/
+    height: auto; /* Por modificar en el responsive*/
     overflow: hidden;
     margin: 30px 0px;
     color: white;

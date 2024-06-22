@@ -1262,10 +1262,6 @@ input[type="range"]::-ms-fill-lower {
   height: 2.25rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-auto {
   height: auto;
 }

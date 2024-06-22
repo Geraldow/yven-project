@@ -14,17 +14,17 @@
 </head>
 
 <body>
-    <!-- <section class="">
+    <section class="block">
         <div class="fixed sidebar w-full bg-dark-transparent border-r border-line_light">
             <div class="logo w-5/6 pb-24 ">
                 <img src="../../../public/assets/images/logo-transparente-1.png" alt="YVEN">
             </div>
             <div class="pt-24">
-                <a href="#" class="my-2 ">
+                <a href="#" class="active">
                     <i class="fas fa-home pr-4"></i>
                     <span>Inicio</span>
                 </a>
-                <a href="#" class="active">
+                <a href="#" class="my-2">
                     <i class="fas fa-users pr-4"></i>
                     <span>Proveedores</span>
                 </a>
@@ -48,7 +48,7 @@
                 <span>Cerrar sesión</span>
             </a>
         </div>
-    </section> -->
+    </section>
 
     <!-- Navbar-->
     <!-- <div class="main-content  w-full mt-2">
@@ -78,39 +78,39 @@
     </div> -->
 
     <!-- CONTENIDO DASHBOARD -->
-    <div class="p-6 content">
 
-        <!-- SECCIÓN INFO -->
-        <div class="grid grid-cols-4 gap-6">
-            <div class="col-span-2">
-                <!--GALERÍA -->
-                <div class="mb-4 sm:max-xl">
+    <div class="p-6 content">
+        <section class="grid gap-8 md:grid-cols-2 md:items-center md:text-left">
+            <!-- galeria -->
+            <div>
+                <div class="md:col-span-2 order-gallery mb-4">
                     <div class="grid gap-4">
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="wedding">
                         </div>
                         <div class="grid grid-cols-5 gap-4">
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor2.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor2.jpg" alt="proveedor2">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor3.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor3.jpg" alt="proveedor3">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor4.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor4.jpg" alt="proveedor4">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/ventaja_5.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/ventaja_5.jpg" alt="ventaja_5">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="wedding">
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <!-- INFO PROVEEDOR -->
+
+            <div>
+                <!-- INFO PROVEEDOR -->
             <div class="col-span-2">
                 <div class="mb-4">
                     <div class="flex items-center justify-between">
@@ -177,48 +177,47 @@
                 <div class="grid grid-cols-5 gap-4 mt-16 ">
 
                     <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_dance.png" class="">
                         </div>
-                        <p class="text-white">Coreografías</p>
+                        <p class="text-white restext">Coreografías</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                    <div class="flex flex-col items-center pl-5">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_party.png" class="">
                         </div>
-                        <p class="text-white text-center">Entretenimiento Personalizado</p>
+                        <p class="text-white text-center restexto mr-4">Entretenimiento Personalizado</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                    <div class="flex flex-col items-center pl-4">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-2 icons_b">
                             <img src="../../../src/img/icon_dj.png" class="">
                         </div>
-                        <p class="text-white">DJ</p>
+                        <p class="text-white restext">DJ</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                    <div class="flex flex-col items-center pl-4">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_bear.png" class="">
                         </div>
-                        <p class="text-white">Guardería</p>
+                        <p class="text-white restext">Guardería</p>
                     </div>
 
                     <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_dance.png" class="">
                         </div>
-                        <p class="text-white">Bailes</p>
+                        <p class="text-white restext">Bailes</p>
                     </div>
                 </div>
             </div>
 
-        </div>
+            </div>
+        </section>
 
-        <!-- SECCIÓN RESEÑAS Y PAQUETES -->
-        <div class="grid grid-cols-4 gap-6">
-            <div class="col-span-2">
-                <!--RESEÑAS -->
+        <section class="grid gap-8 md:grid-cols-2 md:items-center md:text-left">
+            <div>
                 <h3 class="text-white text-[32px] mt-10 mb-6"> Reseñas </h3>
                 <div class="grid md:grid-cols-2 gap-8">
 
@@ -411,7 +410,7 @@
 
                 </div>
             </div>
-            <div class="col-span-2">
+            <div>
                 <h3 class="text-white text-[32px] mt-10 mb-6" >Conoce Nuestros Paquetes </h3>
                 
                     <div class="flex justify-center gap-6 mb-6 ">
@@ -460,20 +459,12 @@
                             <button class="text-white bg-primary hover:bg-secondary font-medium rounded-lg text-sm px-10 py-2.5">Obtener</button>
                         </div>
                     </div>
-                    
-                    
-                
-                <div class="text-center mt-6">
-                    <button class="text-white bg-primary font-semibold hover:bg-secondary font-medium rounded-lg text-sm px-10 py-2.5">ELIGE TU PAQUETE</button>
-                </div>
+                    <div class="text-center mt-6">
+                        <button class="text-white bg-primary font-semibold hover:bg-secondary font-medium rounded-lg text-sm px-10 py-2.5">ELIGE TU PAQUETE</button>
+                    </div>
             </div>
-        </div>
-
-        
-        
-
+        </section>
     </div>
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 

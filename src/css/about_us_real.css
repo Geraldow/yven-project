@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto; /* Por modificar en el responsive*/
+    min-height: 500px; /* Por modificar en el responsive*/
     overflow: hidden;
     margin: 30px 0px;
     color: white;
@@ -35,7 +35,7 @@
   }
   
   .tablink {
-    font-size: 24px!important;
+    font-size: 24px;
     font-family: 'Montserrat';
     font-weight: 300;
     border: none;
@@ -60,7 +60,7 @@
     text-align: center;
     overflow-y: auto; 
     width: 100%;
-    height: calc(100% - 40px);
+    height: 500px;
   }
   
 
@@ -119,6 +119,7 @@
   
   /* Estilos responsivos */
   @media screen and (max-width: 1350px) {
+
     .card-text h3 {
         font-size: 17px;
     }
@@ -128,7 +129,10 @@
   }
 
   @media (max-width: 1230px){
-    
+    .tabcontent {
+        height: 600px;
+    }
+
     .tabs-container {
         height: 700px; 
     }
@@ -149,6 +153,10 @@
   }
 
   @media screen and (max-width: 992px) {
+    .tabcontent {
+        height: 850px;
+    }
+
     .tabs-container {
         height: 900px;
     }
@@ -169,6 +177,10 @@
   
   @media (max-width: 768px) {
 
+    .tabcontent {
+        height: 1200px;
+    }
+
     .tabs-container {
         height: 1200px;
         margin: 20px 20px;
@@ -176,6 +188,10 @@
     .grid-container {
       grid-template-columns: 1fr;
       gap: 10px;
+    }
+
+    .tablink {
+        font-size: 18px!important;
     }
 
     .card-ventajas {
@@ -194,14 +210,22 @@
   }
 
   @media screen and (max-width: 530px) {
+    .tablink {
+        font-size: 15px!important;
+    }
+
     .card-text  h3{
         margin: 10px;
     }
   }
 
   @media screen and (max-width: 450px) {
+    .tablink{
+        font-size: 12px!important;
+    }
+
     .tabs-container {
-        margin: 7px;
+        margin: 2px;
     }
 
     .grid-container {

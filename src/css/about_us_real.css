@@ -253,6 +253,7 @@
   }
   
 
+
   
 /* Sección Ventajas Yven Slider */
 
@@ -578,6 +579,9 @@
     font-weight: 400;
 }
 
+.img-val {
+    height: 200px;
+}
 
 
 /* Reseñas */
@@ -668,8 +672,8 @@
 }
 
 .card-nosotros img {
-    width: 25px;
-    height: 25px;
+    width: 70px;
+    height: 70px;
     box-shadow: 0px 0px 18.227333068847656px rgba(149, 37, 201, 0.75);
 }
 

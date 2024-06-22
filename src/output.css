@@ -1030,10 +1030,6 @@ input[type="range"]::-ms-fill-lower {
   grid-column: span 3 / span 3;
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1150,6 +1146,10 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1252,6 +1252,10 @@ input[type="range"]::-ms-fill-lower {
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-9 {
@@ -1587,6 +1591,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(55 12 148 / var(--tw-bg-opacity));
 }
 
+.bg-third {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 66 182 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1693,10 +1702,6 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 6rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1737,10 +1742,6 @@ input[type="range"]::-ms-fill-lower {
   text-align: center;
 }
 
-.font-sansation {
-  font-family: Sansation, sans-serif;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1761,6 +1762,10 @@ input[type="range"]::-ms-fill-lower {
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .text-\[20px\] {
@@ -1833,6 +1838,11 @@ input[type="range"]::-ms-fill-lower {
 .text-line_light {
   --tw-text-opacity: 1;
   color: rgb(204 204 204 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(196 27 162 / var(--tw-text-opacity));
 }
 
 .text-teal-400 {
@@ -1961,7 +1971,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  font-family: 'Sansation', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 :root{
@@ -1975,22 +1985,6 @@ body {
   background-color: var(--secondary-color);
 }
 
-div button.color-btns {
-  background-color: #345E67;
-}
-
-button.login-color-btn {
-  background-color: var(--green-light);
-}
-
-p a span.create-new-acc {
-  color: var(--green-light);
-}
-
-.custom-bg-color {
-  background-color: var(--secondary-color);
-}
-
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 66 159 / var(--tw-bg-opacity));
@@ -1999,6 +1993,11 @@ p a span.create-new-acc {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-800:hover {
@@ -2161,10 +2160,6 @@ p a span.create-new-acc {
     grid-column: span 1 / span 1;
   }
 
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2245,3 +2240,5 @@ p a span.create-new-acc {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
+
+

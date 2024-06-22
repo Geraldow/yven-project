@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center; 
     background-attachment: fixed;
-    font-family: 'Sansation', Arial, Helvetica, sans-serif; 
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
 }
 
 :root{
@@ -32,18 +32,4 @@ body {
     background-color: var(--secondary-color);
 }
 
-div button.color-btns {    
-    background-color: #345E67;
-}
 
-button.login-color-btn {
-    background-color: var(--green-light);
-}
-
-p a span.create-new-acc {
-    color: var(--green-light);
-}
-
-.custom-bg-color {
-   background-color: var(--secondary-color);
-}

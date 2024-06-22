@@ -13,7 +13,7 @@ module.exports = {
         'line_light': '#CCCCCC',
       },
       fontFamily: {
-        sansation: ['Sansation', 'sans-serif'],
+       
         montserrat: ['Montserrat', 'sans-serif'],
       },
      

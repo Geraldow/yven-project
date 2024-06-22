@@ -18,10 +18,9 @@
 <body class="grid-container grid-cols-10 gap-2 ">
 
     <!-- Menu sidebar left -->
-    <section class="grid col-span-2 md:col-span-1" data-drawer-hide="drawer-example" aria-controls="drawer-example">
-       
-        <aside id="drawer-example" class="card-accion sidebar-menu-left fixed sidebar-menu w-full  transition-transform duration-300 md:w-auto  md:block" tabindex="-1" aria-labelledby="drawer-label">
-            <div class="logo w-5/6 pb-24 ">
+    <section class="col-span-2 md:col-span-2 lg:col-span-2 hidden md:block">
+        <aside id="drawer-example" class="card-accion sidebar-menu-left fixed sidebar-menu w-full transition-transform duration-300 md:w-auto md:block" tabindex="-1" aria-labelledby="drawer-label">
+            <div class="logo w-5/6 pb-24">
                 <img src="../../../public/assets/images/Yven-completo.png" alt="YVEN">
             </div>
             <div class="content-sidebar">
@@ -35,17 +34,15 @@
                 </a>
                 <a href="#" class="my-2">
                     <i class="fas fa-tags pr-4"></i>
-                    <span class="lg:text-[16px]"> Categorias</span>
+                    <span class="lg:text-[16px]">Categorias</span>
                 </a>
                 <a href="#" class="my-2">
                     <i class="fas fa-cog pr-4"></i>
                     <span class="lg:text-[16px]">Configuración</span>
                 </a>
-                
-                    <button
-                        class="button-primary text-white mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-3 py-3 text-center mb-2">Compara
-                        Proveedores</button>
-                
+                <div class="pt-6 lg:pt-2">
+                    <button class="button-primary text-white sansation lg:text-[14px] mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg px-3 py-3 text-center mb-2">Compara Proveedores</button>
+                </div>
             </div>
             <a href="../../index.html" class="logout absolute bottom-2">
                 <i class="fas fa-sign-out-alt"></i>
@@ -56,7 +53,7 @@
     
     
     <!-- Contenido Principal  -->
-
+    <include src="../../partials/header.html" />
     <div class="navbar-content-main col-span-8  p-4">
         <!-- Navbar-->
         <nav class="flex justify-between items-center">
@@ -103,272 +100,7 @@
             
             
         </nav>
-       <!-- Profile -->
-        <div class="profile-page">
-            <dialog class="dialog-profile">
-                <div class="container-profile">
-                    <button class="btn-close-profile"><i class="fa-solid fa-x"></i></button>
-                    <div class="container-grid-profile">
-                        <div class="container-images-conexion">
-                            <img src="/src/img/User-1.png" alt="">
-                            <a href="#" class="link-conexion">Conectar con Facebook</a><br><br>
-                            <a href="#" class="edit-profile"><i class="fa-solid fa-user-pen"></i> Editar</a>
-                        </div>
-                        <div class="container-general-edit">
-                            <h3>Mi Perfil</h3>
-                            <div class="container-user-dates">
-                                <div class="column-dat1">
-                                    <h2>Nombres</h2>
-                                    <input type="text">
-                                    <h2>Contraseña</h2>
-                                    <input type="text">
-                                </div>
-                                <div class="column-dat2">
-                                    <h2>Apellidos</h2>
-                                    <input type="text">
-                                    <h2>Teléfono</h2>
-                                    <input type="text">
-                                </div>
-                                <div class="column-dat3">
-                                    <h2>Correo Electrónico</h2>
-                                    <input type="text">
-                                    <h1>Autenticación</h1>
-                                    <span>Yven ID</span>
-                                    <p>lucimarthans@gmail.com</p>
-                                    <span>Yven Detalles</span>
-                                    <p>http://127.0.0.1:5502/src/pages/dashboard/home.html</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </dialog>
-        </div>
-        <!-- Notifiaction Active Container -->
-        <section>
-            <dialog class="dialog">
-                <div class="container-notification">
-                    <div class="close-title">
-                        <button class="btn-close"><i class="fa-solid fa-chevron-left"></i></button><button
-                            class="btn-close"></button>
-                        <h3 class="title-notification">Notificaciones</h3>
-                    </div>
-                    <hr class="line-noti">
-                    <nav class="nav-noti">
-                        <button class="tab-button active" data-tab="todos">Todos <span>6</span></button>
-                        <button class="tab-button" data-tab="proveedor">Proveedores <span>3</span></button>
-                        <button class="tab-button" data-tab="promociones">Promociones <span>3</span></button>
-                    </nav>
-                    <div class="content-noti">
-                        <!-- Nav link 1 TODOS -->
-                        <div class="tab-content" id="todos">
-                            <div class="card-noti">
-                                <div class="dates-user">
-                                    <img src="/src/img/User-3.png" alt="">
-                                    <h4 class="user-name" id="user-name">CHRISTINA MORILLO</h4>
-                                    <h5 class="user-message" id="user-message">te envio un mensaje</h5>
-                                    <a href="#" class="email-user">christinamori@gmail.com</a>
-                                </div>
-                                <div class="card-message">
-                                    <h3>¿Qué te parecio mi servicio como Proveedor?</h3>
-                                    <p>Califica mis secciones en la sección reseñas 🥰</p>
-                                    <a href="#">Ir a Reseñas <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">hace 2 horas</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="card-message">
-                                    <h3>¡Atención Novios y Novias💑</h3>
-                                    <p>¿Sueñas con una boda inolvidable? No busques más. Descubre
-                                        nuestro nuevo paquete de bodas de ensueño. Desde la
-                                        ceremonia hasta la recepción, tenemos todo cubierto para que tu
-                                        día se perfecto.
-                                    </p>
-                                    <a href="#">Ver Paquete de Bodas a detalle <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">hace 3 horas</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="card-message">
-                                    <h3>Conoce los mejores locales para que organizes stu evento 🤩</h3>
-                                    <div class="images-noti">
-                                        <img src="/src/img/local-img-1.png" alt="">
-                                        <img src="/src/img/local-img-2.png" alt="">
-                                        <img src="/src/img/local-img-3.png" alt="">
-                                        <img src="/src/img/local-img-4.png" alt="">
-                                    </div>
-                                    <p> Si quieres conocer todos los locales que tenemos para tí ingresando al siguiente
-                                        link</p>
-                                    <a href="#">Ver más aquí <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">hace 5 horas</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="dates-user">
-                                    <img src="/src/img/User-2.png" alt="">
-                                    <h4 class="user-name" id="user-name">PEPE GONZALES</h4>
-                                    <h5 class="user-message" id="user-message">Quiere conectarse contigo</h5>
-                                    <a href="#" class="email-user">pepegonza@gmail.com</a>
-                                </div>
-                                <div class="time-message">
-                                    <span id="time-message">3 de Mayo</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="card-message">
-                                    <h3>¡Conoce los mejores pasos para poder organizar tu evento y obtener resultados
-                                        rabulosos!🎉</h3>
-                                    <p>Algunas recomendaciones para ayudarte a organizar tu evento de la mejor manera
-                                        posible y ajustar tu presupuesto</p>
-                                    <a href="#">Ver más aquí <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">2 de Mayo</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="dates-user">
-                                    <img src="/src/img/User-1.png" alt="">
-                                    <h4 class="user-name" id="user-name">ANDREA PIACQUARDIO</h4>
-                                    <h5 class="user-message" id="user-message">te envio un mensaje</h5>
-                                    <a href="#" class="email-user">piacquardio@gmail.com</a>
-                                </div>
-                                <div class="card-message">
-                                    <p>¡Hola Tereza! Entra a la sección promociones para que te enteres del mejor
-                                        servicio Catering
-                                        que tengo para tí❤️
-                                    </p>
-                                    <a href="#">Sección Promociones <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">30 de Abril</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Nav link 2 PROVEEDORES -->
-                        <div class="tab-content" id="proveedor">
-                            <div class="card-noti">
-                                <div class="dates-user">
-                                    <img src="/src/img/User-3.png" alt="">
-                                    <h4 class="user-name" id="user-name">CHRISTINA MORILLO</h4>
-                                    <h5 class="user-message" id="user-message">te envio un mensaje</h5>
-                                    <a href="#" class="email-user">christinamori@gmail.com</a>
-                                </div>
-                                <div class="card-message">
-                                    <h3>¿Qué te parecio mi servicio como Proveedor?</h3>
-                                    <p>Califica mis secciones en la sección reseñas 🥰</p>
-                                    <a href="#">Ir a Reseñas <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">hace 2 horas</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="dates-user">
-                                    <img src="/src/img/User-2.png" alt="">
-                                    <h4 class="user-name" id="user-name">PEPE GONZALES</h4>
-                                    <h5 class="user-message" id="user-message">Quiere conectarse contigo</h5>
-                                    <a href="#" class="email-user">pepegonza@gmail.com</a>
-                                </div>
-                                <div class="time-message">
-                                    <span id="time-message">3 de Mayo</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="dates-user">
-                                    <img src="/src/img/User-1.png" alt="">
-                                    <h4 class="user-name" id="user-name">ANDREA PIACQUARDIO</h4>
-                                    <h5 class="user-message" id="user-message">te envio un mensaje</h5>
-                                    <a href="#" class="email-user">piacquardio@gmail.com</a>
-                                </div>
-                                <div class="card-message">
-                                    <p>¡Hola Tereza! Entra a la sección promociones para que te enteres del mejor
-                                        servicio Catering
-                                        que tengo para tí❤️
-                                    </p>
-                                    <a href="#">Sección Promociones <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">30 de Abril</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Nav link 3 PROMOCIONES -->
-                        <div class="tab-content" id="promociones">
-                            <div class="card-noti">
-                                <div class="card-message">
-                                    <h3>¡Atención Novios y Novias💑</h3>
-                                    <p>¿Sueñas con una boda inolvidable? No busques más. Descubre
-                                        nuestro nuevo paquete de bodas de ensueño. Desde la
-                                        ceremonia hasta la recepción, tenemos todo cubierto para que tu
-                                        día se perfecto.
-                                    </p>
-                                    <a href="#">Ver Paquete de Bodas a detalle <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">hace 3 horas</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="card-message">
-                                    <h3>Conoce los mejores locales para que organizes stu evento 🤩</h3>
-                                    <div class="images-noti">
-                                        <img src="/src/img/local-img-1.png" alt="">
-                                        <img src="/src/img/local-img-2.png" alt="">
-                                        <img src="/src/img/local-img-3.png" alt="">
-                                        <img src="/src/img/local-img-4.png" alt="">
-                                    </div>
-                                    <p> Si quieres conocer todos los locales que tenemos para tí ingresando al siguiente
-                                        link</p>
-                                    <a href="#">Ver más aquí <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">hace 5 horas</span>
-                                </div>
-                            </div>
-                            <div class="card-noti">
-                                <div class="card-message">
-                                    <h3>¡Conoce los mejores pasos para poder organizar tu evento y obtener resultados
-                                        rabulosos!🎉</h3>
-                                    <p>Algunas recomendaciones para ayudarte a organizar tu evento de la mejor manera
-                                        posible y ajustar tu presupuesto</p>
-                                    <a href="#">Ver más aquí <i
-                                            class="fa-solid fa-chevron-right link-page-message"></i></a>
-                                </div>
-                                <div class="time-message">
-                                    <i class="fa-solid fa-circle spot"></i>
-                                    <span id="time-message">2 de Mayo</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </dialog>
-        </section>
+<!-- profile -->
 
         <section class="dashboard mt-12 ">
             <!-- Contenido principal -->
@@ -620,13 +352,9 @@
     </script>
     <!-- sidebar left -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const toggleButton = document.getElementById('toggleButtonLeft');
-            const sidebar = document.getElementById('drawer-example');
-
-            toggleButton.addEventListener('click', function () {
-                sidebar.classList.remove('sidebar-menu-left')
-            });
+        document.getElementById('toggleButtonLeft').addEventListener('click', function () {
+            var sidebar = document.querySelector('.sidebar-menu-left');
+            sidebar.classList.toggle('show');
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>

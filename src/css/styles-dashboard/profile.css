@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    font-family: 'Montserrat';
+}
 :root {
+    --color-secondary: #C41BA2;
+    --color-dark-blue: #370C94;
+    --color-third: #4442B6;
+    --color-third-opacity: #0a023693;
     --color-messageUser: rgba(255, 255, 255, 0.809);
     --color-emailUser:  rgba(202, 202, 202, 0.822);  
-    --color-greenLight: #52bfb9;
-}
-
+    --color-light: #F8F8F8;
+  }
 /* Profile Dialog Container */
 
 .dialog-profile {
     flex-direction: column;
-    background-color: var(--secondary-color);
+    background-color: var(--color-third-opacity);
     border-radius: 20px;
 }
 
@@ -21,7 +29,7 @@
     height: 80vh;
     width: 1200px;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color:  var(--color-third-opacity);
     color: white;
     font-family: 'Montserrat';
 }
@@ -35,7 +43,7 @@
 
 .btn-close-profile > i {
     color: white;
-    background-color: #52bfbac7;
+    background-color: transparent;
     padding: 10px 14px;
     border-radius: 100%;
 }
@@ -62,7 +70,7 @@
 
 .link-conexion {
     padding: 10px 12px;
-    background-color: #52bfbaac;
+    background-color: var(--color-third);
     color: white;
     border-radius: 5px;
 }
@@ -98,8 +106,8 @@
     width: 80%;
     border-radius: 5px;
     margin: 10px 0 30px 0;
-    background-color: #52bfba67;
-    border: 1px solid var(--color-greenLight);
+    background-color: transparent;
+    border: .5px solid var(--color-light);
 }
 
 .column-dat2 > input{
@@ -107,8 +115,8 @@
     width: 80%;
     border-radius: 5px;
     margin: 10px 0 30px 0;
-    background-color: #52bfba67;
-    border: 1px solid var(--color-greenLight);
+    background-color: transparent;
+    border: .5px solid var(--color-light);
 }
 
 .column-dat3 {
@@ -119,8 +127,8 @@
     width: 90%;
     border-radius: 5px;
     margin: 10px 0 30px 0;
-    background-color: #52bfba67;
-    border: 1px solid var(--color-greenLight);
+    background-color: transparent;
+    border: .5px solid var(--color-light);
 }
 
 .column-dat3 > h1 {

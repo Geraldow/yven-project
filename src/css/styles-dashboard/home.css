@@ -61,7 +61,7 @@ i{
 }
 .sidebar-menu a:hover {
     background-color: var(--color-dark-blue);
-    border-radius: 1rem;
+    border-radius: 10px;
  
 }
 .sidebar-menu a:hover i {
@@ -94,7 +94,7 @@ i{
         
     }
     .sidebar-menu a {
-        padding: 10px 5px;
+        padding: 10px 10px;
         text-decoration: none;
         font-size: 18px;
         color: white;
@@ -204,8 +204,12 @@ aside .sidebar-right {
       
 }
 @media screen and (max-width: 801px) {
-    .sidebar-menu-left{
-        visibility: hidden;
+    .sidebar-menu-left {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .sidebar-menu-left.show {
+        transform: translateX(0);
     }
     .content {
         margin-left: 0;

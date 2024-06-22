@@ -16,13 +16,8 @@
 }
 .transparent-button {
     background-color: transparent;
-    border: 1px solid white;
+    border: 2px solid #7C3AED;
     color: #FFFFFF;
-}
-.transparent-button:hover {
-    background-color: #7C3AED;
-    border: 1px solid white;
-    color: white;
 }
 .transparent-button.selected {
     background-color: #7C3AED;
@@ -43,6 +38,12 @@
 .tema-graduacion {
     background-color: #6B349C;
 }
-.tema-bautizo, .tema-otro {
+.tema-bautizo {
     background-color: #4A4D7E;
+}
+.tema-otro {
+    background-color: #4A4D7E;
+}
+.card {
+    background-color: #1F0732;
 }

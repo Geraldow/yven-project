@@ -1,36 +1,36 @@
 // Slider Cards Section Ventajas
 
 let swiperCards = new Swiper('.card-content', {
-    loop: true,
-    spaceBetween: 32,
-    grabCursor: true,
-  
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
-    },
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
 
-    breakpoints: {
-        600: {
-            slidesPerView: 2,
-        },
-        968: {
-            slidesPerView: 3,
-        },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
     },
-  
-  });
+    968: {
+      slidesPerView: 3,
+    },
+  },
+
+});
 
 
 // Función Ventajas
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   // Mostrar la pestaña "Todos los eventos" por defecto
   var defaultTab = document.querySelector('.tablink');
   if (defaultTab) {
@@ -52,14 +52,14 @@ function openTab(tabName, event) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].classList.remove("active");
   }
-  
+
   var tab = document.getElementById(tabName);
   if (tab) {
     tab.style.display = "block";
   } else {
     console.error("Element with id '" + tabName + "' not found.");
   }
-  
+
   if (event) {
     event.currentTarget.classList.add("active");
     var underline = document.getElementById("underline");
@@ -98,3 +98,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Video experiencias
+
+document.addEventListener('DOMContentLoaded', function () {
+  const showMoreBtn = document.getElementById('show-more-btn');
+  const video2Container = document.getElementById('video2-container');
+
+  showMoreBtn.addEventListener('click', function () {
+    if (video2Container.classList.contains('hidden')) {
+      video2Container.classList.remove('hidden');
+      showMoreBtn.textContent = 'Ver menos';
+    } else {
+      video2Container.classList.add('hidden');
+      showMoreBtn.textContent = 'Ver más';
+    }
+  });
+});

@@ -1,22 +1,7 @@
-.custom-bg {
-    background-color: #2D163E;
-}
-.custom-button {
-    background-color: transparent;
-}
-.custom-border {
-    border-color: #FFFFFF;
-    border-width: 1px;
-}
-.custom-text {
-    color: #FFFFFF;
-}
-.selected {
-    border: 2px solid #7C3AED;
-}
+
 .transparent-button {
     background-color: transparent;
-    border: 2px solid #7C3AED;
+    border: 1px solid #FFFFFF;
     color: #FFFFFF;
 }
 .transparent-button.selected {
@@ -46,4 +31,8 @@
 }
 .card {
     background-color: #1F0732;
+}
+
+.border-white {
+    border: 1px solid white;
 }

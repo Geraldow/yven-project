@@ -4,23 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-    <link href="./css/globalStyles.css" rel="stylesheet">  
-    <link href="./css/generales.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/css/globalStyles.css" rel="stylesheet">  
+    <link href="./src/css/generales.css" rel="stylesheet">
+    <title>Yven Eventos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/about_us_real.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/src/css/about_us_real.css">
 </head>
-
 <body class="bg-bg_dark">
     <header>
-        <nav id="first-section" class="bg-dark-transparent sticky backdrop-blur-sm border-line_light/25  border-b">
+        <nav id="first-section" class="bg-dark-transparent sticky backdrop-blur-sm border-line_light/25  border-b mb-8">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
                 <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="../public/assets/images/logo-transparente-1.png" class="h-12" alt="Yven Logo" />
+                    <img src="./public/assets/images/logo-transparente-1.png" class="h-12" alt="Yven Logo" />
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
                     class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none  dark:text-gray-400  dark:focus:ring-gray-600"
@@ -28,8 +27,7 @@
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 17 14">
-                        <path stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
+                        <path stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -37,43 +35,42 @@
                         class=" flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 dark:bg-gray-800 ">
 
                         <li>
-                            <a href="#"
+                            <a href="src/pages/login.html"
                                 class="block py-3 px-1 text-light-color text-center  hover:border-b sansation md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Iniciar
                                 sesión</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#ours"
                                 class="block sansation py-3 px-1 text-light-color hover:border-b  text-center md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Nosotros</a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="#footer"
                                 class="block py-3 px-1 text-light-color hover:border-b text-center   md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-primary">Contactanos</a>
                         </li>
 
                 </div>
             </div>
-        </nav>
-
+        </nav>  
     </header>
-    <section class="primary-section flex flex-row w-full xl:pt-6 4 md:pt-12  sm:justify-center">
+    <section class="primary-section flex flex-row w-full xl:pt-6 4 md:pt-12  sm:justify-center mb-36">
         <section class="menu-social-media content-center">
             <div class="bg-dark-transparent border-line_light/25 rounded-r-lg border flex flex-col w-16 justify-start shadow-sm"
                 role="group">
                 <button type="button"
                     class="px-4 py-3 text-sm rounded-r-lg font-medium text-gray-900 bg-dark-transparent hover:bg-primary hover:text-blue-700 hover:rounded-tr-lg focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
-                    <img src="../public/assets/iconos/equis.png" alt="">
+                    <img src="./public/assets/iconos/equis.png" alt="">
                 </button>
                 <button type="button"
                     class="px-4 py-3 text-sm font-medium text-gray-900 bg-dark-transparent rounded-r-lg hover:bg-primary hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
-                    <img src="../public/assets/iconos/youtube.png" alt="">
+                    <img src="./public/assets/iconos/youtube.png" alt="">
                 </button>
                 <button type="button"
                     class="px-4 py-3 text-sm font-medium text-gray-900 bg-dark-transparent rounded-r-lg hover:bg-primary hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
-                    <img src="../public/assets/iconos/instagram.png" alt="">
+                    <img src="./public/assets/iconos/instagram.png" alt="">
                 </button>
                 <button type="button"
                     class="px-4 py-3 text-sm font-medium text-gray-900 bg-dark-transparent rounded-r-lg hover:bg-primary hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-primary hover:rounded-br-lg dark:border-gray-700 dark:text-white dark:hover:text-white  dark:focus:ring-blue-500 dark:focus:text-white">
-                    <img src="../public/assets/iconos/facebook.png" alt="">
+                    <img src="./public/assets/iconos/facebook.png" alt="">
                 </button>
             </div>
         </section>
@@ -85,17 +82,17 @@
                 <div class="relative h-96 overflow-hidden md:h-96">
                     <!-- Item 1 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../public/assets/images/fiesta1.jpeg"
+                        <img src="./public/assets/images/fiesta1.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 2 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../public/assets/images/fiesta2.jpeg"
+                        <img src="./public/assets/images/fiesta2.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
                     <!-- Item 3 -->
                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="../public/assets/images/fiesta3.jpeg"
+                        <img src="./public/assets/images/fiesta3.jpeg"
                             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                     </div>
 
@@ -115,7 +112,7 @@
 
         </section>
         <section class="container-text-primary pt-6 w-2/3 mx-8 xl:mx-12 lg:mx-12 md:mx-6 content-center ">
-            <h1 class="mb-16 uppercase sansation font-bold text-light-color ">
+            <h1 class="mb-16 uppercase sansation font-bold text-light-color">
                 UN LUGAR PARA TODOS TUS EVENTOS</h1>
             <p
                 class="font-normal text-light-color xs:text-4xl xl:text-4xl md:text-md lg:text-2xl sm:text-lg dark:text-gray-400">
@@ -124,38 +121,38 @@
                 euismod, leo eu gravida tincidunt, tortor ligula vestibulum libero, non eleifend ligula risus sed
                 libero.
             </p>
-            <button
-                class="button-primary uppercase text-white sansation text-lg mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-8 py-4 text-center mb-2">Obtenlo
-                gratis</button>
+            <a href="./src/pages/login.html">
+                <button
+                class="button-primary text-white sansation text-lg mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-8 py-4 text-center mb-2">Obtenlo
+                gratis
+            </button>
+            </a>
         </section>
         <section class="main-carousel w-5/6 h-full">
             <div id="carousel" class="content-center">
 
                 <div class="prev rounded-large">
-                    <img class="rounded-large" src="../public/assets/images/fiesta1.jpeg">
+                    <img class="rounded-large" src="./public/assets/images/fiesta1.jpeg">
                 </div>
 
                 <div class="selected rounded-large">
-                    <img class="rounded-large" src="../public/assets/images/fiesta2.jpeg">
+                    <img class="rounded-large" src="./public/assets/images/fiesta2.jpeg">
                 </div>
 
                 <div class="next rounded-large">
-                    <img class="rounded-large" src="../public/assets/images/fiesta3.jpeg">
+                    <img class="rounded-large" src="./public/assets/images/fiesta3.jpeg">
                 </div>
             </div>
         </section>
-
-
     </section>
-    <br><br><br><br><br><br><br><br>
-<section>
     <!-- Enfoque Eventos -->
-    <div class="tabs-container">
+<section>
+    <div class="tabs-container mb-72" id="services">
         <div class="tabs">
-          <button class="tablink" onclick="openTab('todos', event)">Todos</button>
-          <button class="tablink" onclick="openTab('celebraciones', event)">Celebraciones de Vida</button>
-          <button class="tablink" onclick="openTab('religiosas', event)">Celebraciones Religiosas</button>
-          <button class="tablink" onclick="openTab('graduaciones', event)">Graduaciones</button>
+          <button class="tablink  decoration-8" onclick="openTab('todos', event)">Todos</button>
+          <button class="tablink  decoration-8" onclick="openTab('celebraciones', event)">Celebraciones de Vida</button>
+          <button class="tablink " onclick="openTab('religiosas', event)">Celebraciones Religiosas</button>
+          <button class="tablink 3xl" onclick="openTab('graduaciones', event)">Graduaciones</button>
           <div id="underline"></div>
         </div>      
         <div id="todos" class="tabcontent">
@@ -166,42 +163,42 @@
                 <h3 class="#">BAUTIZO</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
               </div>
-              <img src="img/img-categoria1.png" alt="Imagen 1">
+              <img src="src/img/img-categoria1.png" alt="Imagen 1">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Cumpleaños</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
               </div>
-              <img src="img/img-categoria2.png" alt="Imagen 2">
+              <img src="src/img/img-categoria2.png" alt="Imagen 2">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Despedida de Soltero</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
               </div>
-              <img src="img/img-categoria3.png" alt="Imagen 3">
+              <img src="src/img/img-categoria3.png" alt="Imagen 3">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Quinceaños</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
               </div>
-              <img src="img/img-categoria4.png" alt="Imagen 4">
+              <img src="src/img/img-categoria4.png" alt="Imagen 4">
             </div>
             <div class="card-ventajas">
                 <div class="card-text">
                   <h3>Graduación Universitaria</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
                 </div>
-                <img src="img/img-categoria5.png" alt="Imagen 3">
+                <img src="src/img/img-categoria5.png" alt="Imagen 3">
               </div>
               <div class="card-ventajas">
                 <div class="card-text">
                   <h3>Confirmación</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, minima!</p>
                 </div>
-                <img src="img/img-categoria6.png" alt="Imagen 3">
+                <img src="src/img/img-categoria6.png" alt="Imagen 3">
               </div>
           </div>
         </div>
@@ -214,35 +211,35 @@
                 <h3>Quinceaños</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aliquid.</p>
               </div>
-              <img src="img/img-categoria4.png" alt="Imagen 5">
+              <img src="src/img/img-categoria4.png" alt="Imagen 5">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Cumpleaños</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, excepturi.</p>
               </div>
-              <img src="img/img-categoria2.png" alt="Imagen 6">
+              <img src="src/img/img-categoria2.png" alt="Imagen 6">
             </div>
             <div class="card-ventajas">
                 <div class="card-text">
                   <h3>Despedida de Soltero</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, pariatur!</p>
                 </div>
-                <img src="img/img-categoria3.png" alt="Imagen 6">
+                <img src="src/img/img-categoria3.png" alt="Imagen 6">
               </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Cumpleaños de Mascota</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, ratione.</p>
               </div>
-              <img src="img/img-categoria7.png" alt="Imagen 7">
+              <img src="src/img/img-categoria7.png" alt="Imagen 7">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Baby Shower</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, deserunt.</p>
               </div>
-              <img src="img/img-categoria8.png" alt="Imagen 8">
+              <img src="src/img/img-categoria8.png" alt="Imagen 8">
             </div>
           </div>
         </div>      
@@ -254,21 +251,21 @@
                 <h3>BAUTIZO</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, cumque?</p>
               </div>
-              <img src="img/img-categoria1.png" alt="Imagen 9">
+              <img src="src/img/img-categoria1.png" alt="Imagen 9">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Primera Comunion</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, suscipit?</p>
               </div>
-              <img src="img/img-categoria9.png" alt="Imagen 10">
+              <img src="src/img/img-categoria9.png" alt="Imagen 10">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Confirmación</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, deserunt.</p>
               </div>
-              <img src="img/img-categoria6.png" alt="Imagen 11">
+              <img src="src/img/img-categoria6.png" alt="Imagen 11">
             </div>
           </div>
         </div>
@@ -280,30 +277,29 @@
                 <h3>Graduación Universitaria</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, architecto.</p>
               </div>
-              <img src="img/img-categoria5.png" alt="Imagen 12">
+              <img src="src/img/img-categoria5.png" alt="Imagen 12">
             </div>
             <div class="card-ventajas">
               <div class="card-text">
                 <h3>Secundaria</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, voluptatibus!</p>
               </div>
-              <img src="img/img-categoria10.png" alt="Imagen 13">
+              <img src="src/img/img-categoria10.png" alt="Imagen 13">
             </div>
           </div>
         </div>
     </div>
-      
 </section>
     <!-- Sección Ventajas Yven Slider -->
-    <section class="ventajas-container pt-24 my-8">
-    <h2 class="text-white title-ventajas my-2 pl-12 text-4xl font-sansation">CONOCE LAS VENTAJAS DE USAR YVEN</h2>
+    <section class="ventajas-container mb-14">
+    <h2 class="text-white title-ventajas my-2 pl-24 text-4xl font-sansation">CONOCE LAS VENTAJAS DE USAR YVEN</h2>
     <section class="container">
         <div class="card-container swiper">
             <div class="card-content">
                 <div class="swiper-wrapper">
                     <article class="card-article swiper-slide">
                         <div class="card-image">
-                            <img src="img/slider-img1.png" alt="Imagen Ventajas Yven" class="card-img">                            
+                            <img src="src/img/slider-img1.png" alt="Imagen Ventajas Yven" class="card-img">                            
                         </div>               
                         <div class="card-data">
                             <h3 class="card-name">
@@ -318,7 +314,7 @@
                     </article>            
                     <article class="card-article swiper-slide">
                         <div class="card-image">
-                            <img src="img/slider-img2.png" alt="Imagen Ventajas Yven" class="card-img">
+                            <img src="src/img/slider-img2.png" alt="Imagen Ventajas Yven" class="card-img">
                         </div>
                         <div class="card-data">
                             <h3 class="card-name">
@@ -333,7 +329,7 @@
                     </article>
                     <article class="card-article swiper-slide">
                         <div class="card-image">
-                            <img src="img/slider-img3.png" alt="Imagen Ventajas Yven" class="card-img">
+                            <img src="src/img/slider-img3.png" alt="Imagen Ventajas Yven" class="card-img">
                         </div>
                         <div class="card-data">
                             <h3 class="card-name">
@@ -348,7 +344,7 @@
                     </article>
                     <article class="card-article swiper-slide">
                         <div class="card-image">
-                            <img src="img/slider-img4.png" alt="Imagen Ventajas Yven" class="card-img">
+                            <img src="src/img/slider-img4.png" alt="Imagen Ventajas Yven" class="card-img">
                         </div>
                         <div class="card-data">
                             <h3 class="card-name">
@@ -363,7 +359,7 @@
                     </article>
                     <article class="card-article swiper-slide">
                         <div class="card-image">
-                            <img src="img/slider-img5.png" alt="Imagen Ventajas Yven" class="card-img">
+                            <img src="src/img/slider-img5.png" alt="Imagen Ventajas Yven" class="card-img">
                         </div>
                         <div class="card-data">
                             <h3 class="card-name">
@@ -378,7 +374,7 @@
                     </article>
                     <article class="card-article swiper-slide">
                         <div class="card-image">
-                            <img src="img/slider-img6.png" alt="Imagen Ventajas Yven" class="card-img">
+                            <img src="src/img/slider-img6.png" alt="Imagen Ventajas Yven" class="card-img">
                         </div>
                         <div class="card-data">
                             <h3 class="card-name">
@@ -407,7 +403,7 @@
     </section>
     
     <!-- Sección Nosotros -->
-    <div class="title-section-nosotros">
+    <div class="title-section-nosotros" id="ours">
         <h3 class="val-noso text-white">NOSOTROS
     </div>
     <div class="container-mivi">
@@ -426,12 +422,12 @@
         </div>
     </div><br>
     <!-- Nuestros Valores -->
-    <div class="title-section">
+    <div class="title-section mt-6">
         <h3 class="val-noso text-white">NUESTROS VALORES</h3><br>
     </div>
     <div class="container-valores">
         <div class="three-containers card-green">
-            <img src="img/idea1.png" alt="Imagen Focus">
+            <img src="src/img/idea1.png" alt="Imagen Focus">
             <h3 class="title-valores">Innovación y creatividad</h3>
             <p class="text-valores">YVEN Adopta la innovación y la creatividad en todos los aspectos de su negocio,
                 desde el desarrollo de nuevos conceptos de eventos y soluciones tecnológicas hasta
@@ -439,14 +435,14 @@
             </p>
         </div>
         <div class="three-containers card-purple">
-            <img src="img/cohesion1.png" alt="Imagen Cohesion">
+            <img src="src/img/cohesion1.png" alt="Imagen Cohesion">
             <h3 class="title-valores">Responsabilidad social y sostenibilidad</h3>
             <p class="text-valores">Participamos activamente en iniciativas sociales y ambientales que contribuyen al
                 bienestar de la comunidad y del planeta. 
             </p>
         </div>
         <div class="three-containers card-red">
-            <img src="img/heart1.png" alt="Imagen Corazón">
+            <img src="src/img/heart1.png" alt="Imagen Corazón">
             <h3 class="title-valores">Enfoque en el <br> cliente</h3>
             <p class="text-valores">YVEN prioriza las necesidades y la satisfacción de sus clientes durante todo el
                 proceso
@@ -460,33 +456,33 @@
     <div class="slider-container-resenas">
         <div class="slider-resenas">
           <div class="card-resenas">
-            <img src="img/User-1.png" alt="">
+            <img src="src/img/User-1.png" alt="">
             <h2>ANDREA PIACQUARDIO</h2>
 
             <p>Lorem, ipsum dolor sit <br>amet consectetur adipisicing.</p>
           </div>
           <div class="card-resenas">
-            <img src="img/User-2.png" alt="Imagen 1">
+            <img src="src/img/User-2.png" alt="Imagen 1">
             <h2>DANIEL XAVIER</h2>
             <p>Lorem ipsum dolor sit <br>amet consectetur adipisicing.</p>
           </div>
           <div class="card-resenas">
-            <img src="img/User-3.png" alt="Imagen 1">
+            <img src="src/img/User-3.png" alt="Imagen 1">
             <h2>CHRISTINA MORILLO</h2>
             <p>Lorem ipsum dolor sit <br>amet consectetur adipisicing.</p>
           </div>
           <div class="card-resenas">
-            <img src="img/User-4.png" alt="Imagen 1">
+            <img src="src/img/User-4.png" alt="Imagen 1">
             <h2>FERNANDA DE LAS CASAS</h2>
             <p>Lorem ipsum dolor sit <br>amet consectetur adipisicing.</p>
           </div>
           <div class="card-resenas">
-            <img src="img/User-5.png" alt="Imagen 1">
+            <img src="src/img/User-5.png" alt="Imagen 1">
             <h2>GILBERTO GONZALES</h2>
             <p>Lorem ipsum dolor sit <br>amet consectetur adipisicing.</p>
           </div>
           <div class="card-resenas">
-            <img src="img/User-6.png" alt="Imagen 1">
+            <img src="src/img/User-6.png" alt="Imagen 1">
             <h2>JUELIZ PANDURO</h2>
             <p>Lorem ipsum, dolor sit <br>amet consectetur adipisicing.</p>
           </div>
@@ -497,23 +493,23 @@
       
 <br><br><br>
 <!-- EXPERIENCIAS -->
-<div class="container mx-auto py-8 px-10 ml-8 mr-8">
+<div class="container mx-auto py-8 pl-12 ml-8 mr-8 mt-32">
     <div class="flex items-center justify-center">
         <div class="w-full md:w-1/2 mb-4 md:mb-0 mr-2">
             <div class="rounded-lg overflow-hidden justify-center">
                 <video class="w-full " autoplay muted controls>
-                    <source src="img/experiencia_1.mp4" type="video/mp4">
+                    <source src="src/img/experiencia_1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
         </div>
         <div class=" w-full md:w-1/2">
             <div class="p-2 ">
-                <h5 class="self-center text-[32px] text-white mb-4">EXPERIENCIAS</h5>
-                <p class="self-center text-[15px] text-white mb-6">Descubre cómo YVEN crea momentos innolvidables. Se testigo
+                <h5 class="self-center text-[32px] text-white mb-4 ml-16">EXPERIENCIAS</h5>
+                <p class="self-center text-[15px] text-white mb-6 ml-16">Descubre cómo YVEN crea momentos innolvidables. Se testigo
                     de las experiencias de nuestros usuarios y anímate a crear tu propia experiencia.</p>
                 <button
-                    class="text-white bg-primary hover:bg-secondary  font-medium rounded-lg text-sm px-10 py-2.5 text-center  mb-2 ">Obtenlo
+                    class="text-white bg-primary hover:bg-secondary font-medium rounded-lg text-lg px-10 py-2.5 text-center mb-2 ml-16">Obtenlo
                     gratis</button>
             </div>
         </div>
@@ -568,38 +564,41 @@
         </div>
       </div>
 <!-- FOOTER -->
-<footer class="footer-container w-full mx-10 mt-8">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+
+<footer class="footer-container w-full mt-8" id="footer">
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 w-full " />
+    <div class="w-full p-4 md:py-8">    
         <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="#" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                <img src="img/logo-tramnsparentes-2.png" class="h-20" alt="" />
-                <span class="self-center text-[32px] text-white">YVEN</span>     
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse ml-16">
+                <img src="../public/assets/images/logo-transparente-1.png" class="h-12" alt="Yven Logo" />
             </a>
-            <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
+            <ul class="flex flex-wrap justify-center items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 mr-16">
                 <li>
                     <button
-                        class="text-white bg-primary font-medium rounded-full text-sm w-10 h-10 stext-center me-2 mb-2"><i
-                            class="fab fa-facebook-f"></i></button>
+                        class="text-white bg-primary font-medium rounded-full text-sm w-14 h-14 stext-center me-2 mb-2"><i
+                            class="fab fa-facebook-f text-3xl"></i></button>
                 </li>
                 <li>
                     <button
-                        class="text-white bg-primary font-medium rounded-full text-sm w-10 h-10 stext-center me-2 mb-2"><i
-                            class="fab fa-instagram"></i></button>
+                        class="text-white bg-primary font-medium rounded-full text-sm w-14 h-14 stext-center me-2 mb-2"><i
+                            class="fab fa-instagram text-3xl"></i></button>
                 </li>
                 <li>
                     <button
-                        class="text-white bg-primary font-medium rounded-full text-sm w-10 h-10 stext-center me-2 mb-2"><i
-                            class="fa-brands fa-x-twitter"></i></button>
+                        class="text-white bg-primary font-medium rounded-full text-sm w-14 h-14 stext-center me-2 mb-2"><i
+                            class="fa-brands fa-x-twitter text-3xl"></i></button>
                 </li>
                 <li>
                     <button
-                        class="text-white bg-primary font-medium rounded-full text-sm w-10 h-10 stext-center me-2 mb-2"><i
-                            class="fa-brands fa-youtube"></i></button>
+                        class="text-white bg-primary font-medium rounded-full text-sm w-14 h-14 stext-center me-2 mb-2"><i
+                            class="fa-brands fa-youtube text-3xl"></i></button>
                 </li>
                 <li>
                     <button
-                        class="text-white bg-primary font-medium rounded-full text-sm w-10 h-10 stext-center me-2 mb-2"><i
-                            class="fa-brands fa-whatsapp"></i></button>
+                        class="text-white bg-primary font-medium rounded-full text-lg w-14 h-14 text-center me-2 mb-2">
+                        <i class="fa-brands fa-whatsapp text-3xl"></i>
+                    </button>
+
                 </li>
             </ul>
         </div>
@@ -609,16 +608,16 @@
                 <div> 
                     <ul class="text-[15px] text-white ">
                         <li class="mb-4">
-                            <a href="#">Inicio</a>
+                            <a href="#" class="font-semibold">Inicio</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#">Acerca de Nosotros</a>
+                            <a href="#ours" class="font-semibold">Acerca de Nosotros</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#">Servicios</a>
+                            <a href="#services" class="font-semibold">Servicios</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#">Preguntas Frecuentes</a>
+                            <a href="#accordion-collapse" class="font-semibold">Preguntas Frecuentes</a>
                         </li>
 
                     </ul>
@@ -626,27 +625,24 @@
                 <div>
                     <ul class="text-[15px] text-white ">
                         <li class="mb-4">
-                            <a href="#">Ayuda</a>
+                            <a href="#" class="font-semibold">Ayuda</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#">Políticas de Privacidad</a>
+                            <a href="#" class="font-semibold">Políticas de Privacidad</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#">Términos y Condiciones</a>
+                            <a href="#" class="font-semibold">Términos y Condiciones</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#">Políticas de Cookies</a>
+                            <a href="#" class="font-semibold">Políticas de Cookies</a>
                         </li>
 
                     </ul>
                 </div>
 
             </div>
-        </div>
-
-
-
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        </div>        
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 w-full" />
         <span class="block text-sm text-[20px] text-white text-center ">COPYRIGHT © 2024 YVEN | DESIGNED BY
             TOPTEAM</span>
     </div>
@@ -656,16 +652,16 @@
 
     <!-- Botón para volver al primer sección -->
     <a href="#first-section" id="back-to-top"
-        class="fixed bottom-4 right-4 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary">
-        ↑ Volver arriba
+        class="fixed bottom-10 right-4 text-3xl bg-primary text-white p-4 rounded-full shadow-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary">
+        ↑
     </a>
 
-    <script src="js/scripts.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/slider-ventajas.js"></script>
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="src/js/scripts.js"></script>
+    <script src="src/js/swiper-bundle.min.js"></script>
+    <script src="src/js/slider-ventajas.js"></script>
+    <script src="src/js/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="src/js/slider.js"></script>
 </body>
 
 </html>

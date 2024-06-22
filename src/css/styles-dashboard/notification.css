@@ -1,0 +1,174 @@
+
+:root {
+    --color-messageUser: rgba(255, 255, 255, 0.809);
+    --color-emailUser:  rgba(202, 202, 202, 0.822);  
+    --color-greenLight: #52bfb9;
+}
+
+.dialog {
+    flex-direction: column;
+}
+
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-notification {
+    min-height: 95vh;
+    max-height: 1500px;
+    width: 600px;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.close-title {
+    display: flex;
+    position: relative;
+    top: 1%;
+}
+
+.btn-close {
+    position: relative;
+    left: 3%;
+    font-size: 25px;
+}
+
+.title-notification {
+    margin: 0 auto;
+    font-size: 1.7em;
+}
+
+.line-noti {
+    margin: 10px 0 10px 0;
+    border: 0.5px solid rgba(255, 255, 255, 0.375);
+    display: flex;
+}
+
+/* Nav Notificaciones */
+
+.nav-noti {
+    display: flex;
+    margin: 0 85px
+}
+
+.tab-button {
+    flex: 1;
+    cursor: pointer;
+    background: #46a19c4a;
+    padding: 7px;
+    font-size: 14.5px;
+}
+
+.tab-button:hover {
+    background-color: #46a19c7c;
+}
+
+.tab-button.active {
+    background-color: #46a19cba;
+    font-weight: bold;
+}
+
+.tab-button > span {
+    padding: 0 5px;
+    background-color: #86cdc98f;
+    border-radius: 3px;    
+} 
+
+/* Contenido de mensajes de Usuarios, Eventos (Cartas)*/
+
+.content-noti {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.card-noti {
+    min-height: 70px;
+    max-height: 600px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #46a19c1c;
+    border: 1px solid rgba(128, 128, 128, 0.223);
+    border-radius: 10px; 
+    position: relative;
+}
+
+.dates-user{
+    display: flex;
+    position: relative;
+}
+
+.dates-user > img {
+    height: 50px;
+}
+
+.dates-user > h4{
+    margin: 0 5px;
+    font-weight: 600;
+    
+}
+
+.dates-user > h5 {
+    color: var(--color-messageUser);
+}
+
+.email-user {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    color: var(--color-emailUser);
+}
+
+.card-message > p {
+    line-height: 18px;
+    font-size: 15px;
+    margin: 0 15px;
+    color: var(--color-messageUser);
+    margin: 5px 0 5px 10px;
+    padding-right: 85px;
+}
+
+.card-message  a, i{
+    color: var(--color-greenLight);
+}
+
+.card-message > h3 {
+    font-size: 18px;
+    font-weight: 520;
+    padding-right: 80px;
+    line-height: 20px;
+    margin-top: 7px;
+}
+
+.card-message > .images-noti {
+    display: flex;
+    margin: 5px 0 5px 10px;    
+    height: 90px;    
+}
+
+.images-noti > img {
+    margin: 0 10px 0 0;
+}
+
+.time-message {
+    position:absolute;
+    right: 5%;
+    bottom: 3%;
+}
+
+.spot {
+    position: absolute;
+    display: block;
+    bottom: 100%;
+    right: 2%;
+}
+
+

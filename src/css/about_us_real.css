@@ -397,20 +397,12 @@
     }
 }
 
-@media screen and (min-width: 1120px){
-    .card-container {
-        
-    }
-    
-}
-
 
 /* Sección Nosotros */
 
 .val-noso {
     font-size: 64px;
-    font-weight: 300;
-    
+    font-weight: 300;    
     font-family: 'Montserrat';
     font-weight: 400;
     

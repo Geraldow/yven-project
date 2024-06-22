@@ -120,40 +120,31 @@
         </section>
         <!-- EXPERIENCIAS -->
         <section class="experiences mx-auto pt-12 mt-8">
-            <div class="flex flex-row justify-between  space-x-4">
-                <div class="container mx-auto  pl-12 ml-8 mr-8 mt-32  ">
-                    <div class="flex flex-col justify-start">
-                        <div class="w-full md:w-1/2 mb-4 md:mb-0 mr-2">
-                            <div class="rounded-lg overflow-hidden justify-center">
-                                <video id="video1" class="video w-full" autoplay muted controls>
-                                    <source src="src/img/experiencia_1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
+            <div class="container mx-auto pl-12 ml-8 mr-8 mt-32">
+                <div class="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-4">
+                    <div class="w-full md:w-1/2 mb-4 md:mb-0 mr-2">
+                        <div class="rounded-lg overflow-hidden justify-center">
+                            <video id="video1" class="video w-full" autoplay muted controls>
+                                <source src="src/img/experiencia_1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-
+                        <div class="flex justify-center mt-4 md:hidden">
+                            <button id="show-more-btn" class="bg-primary text-white py-2 px-4 rounded">Ver más</button>
+                        </div>
+                    </div>
+                    <div id="video2-container" class="w-full md:w-1/2 mb-4 md:mb-0 mr-2 hidden md:block">
+                        <div class="rounded-lg overflow-hidden justify-center">
+                            <video id="video2" class="video w-full" autoplay muted controls>
+                                <source src="src/img/experiencia_2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
-                <div class="container mx-auto  pl-12 ml-8 mr-8 mt-32  ">
-                    <div class="flex flex-col justify-start">
-                        <div class="w-full md:w-1/2 mb-4 md:mb-0 mr-2">
-                            <div class="rounded-lg overflow-hidden justify-center">
-                                <video id="video1" class="video w-full" autoplay muted controls>
-                                    <source src="src/img/experiencia_2.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
             </div>
-
-    </div>
-    </section>
+        </section>
+        
 
     </div>
 
@@ -430,7 +421,7 @@
             <h3 class="val-noso text-white mx-auto text-center mb-8">Nosotros</h3>
         </div>
 
-        <div class="flex flex-row justify-center flex-wrap m-24 space-x-3 pb-8 mb-4 mx-auto w-5/6">
+        <div class="flex flex-row justify-center flex-wrap m-24 space-x-3 pb-8 mb-4 mx-auto w-5/9">
             <div class="card-nosotros w-full lg:w-1/2">
                 <div class="card-content-nosotros h-56">
                     <div class="card-title mb-4">Misión</div>
@@ -846,7 +837,7 @@
                     <li>
                         <button
                             class="text-white bg-primary font-medium rounded-full text-sm w-14 h-14 stext-center me-2 mb-2"><i
-                                class="fa-brands fa-x-twitter text-3xl"></i></button>
+                                class="fa-brands fa-twitter text-3xl"></i></button>
                     </li>
                     <li>
                         <button

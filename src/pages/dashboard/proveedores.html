@@ -4,302 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="" href="./public/assets/images/favicon-yven.svg" type="image/x-icon">
     <link href="../../output.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles-dashboard/proveedores.css">
     <link rel="stylesheet" href="../../css/globalStyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles-dashboard/home.css">
+    <link rel="stylesheet" href="../../css/styles-dashboard/proveedores.css">
+    
     <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
-
-    <title>Document</title>
+    <title>Yven - Crea tu evento</title>
 </head>
 
-<body>
-    <section class="">
-        <div class="fixed sidebar w-full bg-dark-transparent border-r border-line_light">
-            <div class="logo w-5/6 pb-24 ">
-                <img src="../../../public/assets/images/logo-transparente-1.png" alt="YVEN">
+<body class="  ">
+
+    <!-- Menu sidebar left -->
+    <!-- <section class="grid grid-cols-10 gap-4   md:col-span-2 lg:col-span-2 hidden md:block">
+        <aside id="drawer-example" class="card-accion col-span-2 bg-gray-200 p-4 sidebar-menu-left fixed sidebar-menu w-full transition-transform duration-300 md:w-auto md:block" tabindex="-1" aria-labelledby="drawer-label">
+            <div class="logo w-5/6 pb-24">
+                <img src="../../../public/assets/images/Yven-completo.png" alt="YVEN">
             </div>
-            <div class="pt-24">
-                <a href="./home.html" class="my-2 ">
+            <div class="content-sidebar">
+                <a href="#" >
                     <i class="fas fa-home pr-4"></i>
-                    <span>Inicio</span>
+                    <span class="lg:text-[16px]">Inicio</span>
                 </a>
-                <a href="#" class="active">
+                <a href="./proveedores.html" class="my-2 active">
                     <i class="fas fa-users pr-4"></i>
-                    <span>Proveedores</span>
+                    <span class="lg:text-[16px]">Proveedores</span>
                 </a>
                 <a href="#" class="my-2">
                     <i class="fas fa-tags pr-4"></i>
-                    <span>Categorias</span>
+                    <span class="lg:text-[16px]">Categorias</span>
                 </a>
                 <a href="#" class="my-2">
                     <i class="fas fa-cog pr-4"></i>
-                    <span>Configuración</span>
+                    <span class="lg:text-[16px]">Configuración</span>
                 </a>
-                <div class="pt-6">
-                    <button
-                        class="button-primary text-white sansation text-md mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg  px-3 py-3 text-center mb-2">Compara
-                        Proveedores</button>
-
+                <div class="pt-6 lg:pt-2">
+                    <button class="button-primary text-white sansation lg:text-[14px] mt-8 bg-primary hover:bg-secondary focus:ring-4 hover:shadow-secondary/50 focus:outline-none shadow-2xl shadow-primary/50 font-medium rounded-lg px-3 py-3 text-center mb-2">Compara Proveedores</button>
                 </div>
             </div>
-            <a href="../../index.html" class="logout">
+            <a href="../../index.html" class="logout absolute bottom-2">
                 <i class="fas fa-sign-out-alt"></i>
-                <span>Cerrar sesión</span>
+                <span class="lg:text-[16px]">Cerrar sesión</span>
             </a>
-        </div>
-    </section>
+        </aside>
+    </section> -->
+    
+    
+    <!-- Contenido Principal  -->
 
-    <!-- Navbar-->
-    <div class="main-content  w-full mt-2">
-        <nav class="p-4 flex justify-between items-center">
-            <div class="relative w-64 ml-64">
+    <div class="  p-4">
+        <nav class="flex justify-between items-center">
+           
+            <div class="relative w-64 bar-search">
                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <i class="fas fa-search text-light-color"></i>
                 </div>
                 <input type="text"
-                    class="bg-transparent text-white placeholder-background w-full pl-10 pr-10 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
+                    class="bg-transparent text-white placeholder-background w-full  rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
                     placeholder="Buscar en Yven">
                 <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
                     <i class="fas fa-filter text-light-color cursor-pointer"></i>
                 </div>
             </div>
-            <div class="options-profile flex items-center">
+
+            <div class="navbar-mobile flex flex-row items-center justify-between">
+                <div>
+                    <button id="toggleButtonLeft" class="text-white bg-transparent  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5   " type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example" aria-controls="drawer-example">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="flex items-center">
                 <i class="fas fa-comment-alt text-white mx-4 cursor-pointer hover:text-teal-400"></i>
-                <i class="fas fa-bell text-white mx-4 cursor-pointer hover:text-teal-400"></i>
+                <button class="btn-open"><i
+                        class="fas fa-bell text-white mx-4 cursor-pointer hover:text-teal-400"></i></button>
+                        <button id="toggleButtonRight"
+                class="p-2 mt-2 text-sm text-gray-500 rounded-lg md:inline-flex items-center hover:bg-gray-100">
+                <span class="sr-only">Open sidebar</span>
+                <i class="fas fa-users"></i>
+            </button>
                 <div class="flex items-center cursor-pointer">
                     <img src="../../../public/assets/images/alberta.jpeg" alt="Profile Picture"
-                        class="profile rounded-full mr-2">
-                    <span class="text-white mr-1">Alberta</span>
+                        class="profile rounded-full mr-2 btn-open-profile">
+                        <button class="btn-open-profile">
+                            <span class="text-white mr-1">Alberta</span>
+                        </button>                   
                     <i class="fas fa-chevron-down text-teal-400"></i>
                 </div>
             </div>
+            <!-- right section fixed -->
+            
+            </div>
+            
+            
         </nav>
-    </div>
-
-    <!-- CONTENIDO DASHBOARD -->
-    <div class="p-6 content">
-        <div class="grid grid-cols-5 gap-6">
-
-            <div class="col-span-3">
-                <!--GALERÍA -->
-                <div class="mb-4">
+        <section class="grid gap-8 md:grid-cols-2 bg-dark-transparent  md:items-center md:text-left">
+            <!-- galeria -->
+            <div>
+                <div class="md:col-span-2 order-gallery mb-4">
                     <div class="grid gap-4">
                         <div>
-                            <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="">
+                            <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="wedding">
                         </div>
                         <div class="grid grid-cols-5 gap-4">
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor2.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor2.jpg" alt="proveedor2">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor3.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor3.jpg" alt="proveedor3">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor4.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/proveedor4.jpg" alt="proveedor4">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/ventaja_5.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/ventaja_5.jpg" alt="ventaja_5">
                             </div>
                             <div>
-                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="">
+                                <img class="h-auto max-w-full rounded-lg" src="../../../src/img/wedding.jpg" alt="wedding">
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+            </div>
 
-                
-                <!-- RESEÑAS -->
-                <h3 class="text-white text-[32px] mt-10 mb-6" > Reseñas </h3>
-                <div class="grid md:grid-cols-2 gap-8">
-                    
-                    <div class=" shadow-md rounded-md p-6 card-bg">
-                        <div class="flex items-center mb-6">
-                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
-                            <div class="ms-4 font-medium dark:text-white">
-                                <p>Alberta</p>
-                                <div class="flex items-center  ">
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                </div>
-                                <div class=" text-sm text-gray-500 mt-2 ">
-                                    
-                                    20/02/2023
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus perferendis, blanditiis animi ipsam modi odit!</p>
-                            </div>
-                    </div>
-                
-                    <div class=" shadow-md rounded-md p-6 card-bg">
-                        <div class="flex items-center mb-6">
-                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
-                            <div class="ms-4 font-medium dark:text-white">
-                                <p>Alberta</p>
-                                <div class="flex items-center  ">
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                </div>
-                                <div class=" text-sm text-gray-500 mt-2 ">
-                                    
-                                    20/02/2023
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus perferendis, blanditiis animi ipsam modi odit!</p>
-                            </div>
-                    </div>
-
-                    <div class=" shadow-md rounded-md p-6 card-bg">
-                        <div class="flex items-center mb-6">
-                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
-                            <div class="ms-4 font-medium dark:text-white">
-                                <p>Alberta</p>
-                                <div class="flex items-center  ">
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                </div>
-                                <div class=" text-sm text-gray-500 mt-2 ">
-                                    
-                                    20/02/2023
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus perferendis, blanditiis animi ipsam modi odit!</p>
-                            </div>
-                    </div>
-
-                    <div class=" shadow-md rounded-md p-6 card-bg">
-                        <div class="flex items-center mb-6">
-                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
-                            <div class="ms-4 font-medium dark:text-white">
-                                <p>Alberta</p>
-                                <div class="flex items-center  ">
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                                        <path
-                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                                    </svg>
-                                </div>
-                                <div class=" text-sm text-gray-500 mt-2 ">
-                                    20/02/2023
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus perferendis, blanditiis animi ipsam modi odit!</p>
-                            </div>
-                    </div>
-                    
-                </div>
-                </div>
-
-
+            <div>
+                <!-- INFO PROVEEDOR -->
             <div class="col-span-2">
-
                 <div class="mb-4">
                     <div class="flex items-center justify-between">
                         <h2 class="text-white text-[32px]">Imagina Productora</h2>
                         <i class="fa-regular fa-heart fa-2xl " style="color: #b80a98;"></i>
-                        
+
                     </div>
                     <div class="flex items-center">
                         <h3 class="text-gray-300 text-xl mb-2">San Borja</h3>
@@ -333,17 +169,18 @@
                                     d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                             </svg>
                         </div>
-                        <div class=" border border-gray-500 text-white rounded p-2 ml-4 w-14 text-center">
-                            <p class="text-xl font-semibold">9.6</p>
-                        </div>
-                        
-                    </div>
 
+
+
+                    </div>
+                    <div class=" border border-gray-500 text-white rounded p-2 ml-4 w-14 text-center">
+                        <p class="text-xl font-semibold">9.6</p>
+                    </div>
                     <div>
-                        
-                        
+
+
                         <div class="mr-12 text-white">
-                            <p>Somos una empresa de entretenimiento comprometida con hacer de esa fecha especial, un día
+                            <p class="text-xl ">Somos una empresa de entretenimiento comprometida con hacer de esa fecha especial, un día
                                 inolvidable, no ofreciendo solo un servicio, si no EXPERIENCIAS INVALUABLES. <br>
                                 Nuestro principal recurso son artistas de larga trayectoria que nos permiten brindar un
                                 espectáculo de alta calidad.</p>
@@ -351,7 +188,7 @@
                     </div>
 
                 </div>
-                
+
                 <hr class="my-6 border-gray-500 sm:mx-auto lg:my-8" />
 
                 <!-- ICONS -->
@@ -359,46 +196,245 @@
                 <div class="grid grid-cols-5 gap-4 mt-16 ">
 
                     <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_dance.png" class="">
                         </div>
-                        <p class="text-white">Coreografías</p>
+                        <p class="text-white restext">Coreografías</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                    <div class="flex flex-col items-center pl-5">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_party.png" class="">
                         </div>
-                        <p class="text-white text-center">Entretenimiento Personalizado</p>
+                        <p class="text-white text-center restexto mr-4">Entretenimiento Personalizado</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                    <div class="flex flex-col items-center pl-4">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-2 icons_b">
                             <img src="../../../src/img/icon_dj.png" class="">
                         </div>
-                        <p class="text-white">DJ</p>
+                        <p class="text-white restext">DJ</p>
                     </div>
 
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                    <div class="flex flex-col items-center pl-4">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_bear.png" class="">
                         </div>
-                        <p class="text-white">Guardería</p>
+                        <p class="text-white restext">Guardería</p>
                     </div>
 
                     <div class="flex flex-col items-center">
-                        <div class="w-16 h-16 rounded-full flex items-center justify-center mr-2 icons_b">
+                        <div class="w-14 h-14 rounded-full flex items-center justify-center mr-4 icons_b">
                             <img src="../../../src/img/icon_dance.png" class="">
                         </div>
-                        <p class="text-white">Bailes</p>
+                        <p class="text-white restext">Bailes</p>
                     </div>
                 </div>
+            </div>
 
+            </div>
+        </section>
+
+        <section class="grid gap-8 md:grid-cols-2 md:items-center bg-dark-transparent md:text-left">
+            <div>
+                <h3 class="text-white text-[32px] mt-10 mb-6"> Reseñas </h3>
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <div class=" shadow-md rounded-md p-6 card-bg">
+                        <div class="flex items-center mb-6">
+                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
+                            <div class="ms-4 font-medium dark:text-white">
+                                <p>Alberta</p>
+                                <div class="flex items-center  ">
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none"
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                </div>
+                                <div class=" text-sm text-gray-500 mt-2 ">
+
+                                    20/02/2023
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero
+                                dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus
+                                perferendis, blanditiis animi ipsam modi odit!</p>
+                        </div>
+                    </div>
+
+                    <div class=" shadow-md rounded-md p-6 card-bg">
+                        <div class="flex items-center mb-6">
+                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
+                            <div class="ms-4 font-medium dark:text-white">
+                                <p>Alberta</p>
+                                <div class="flex items-center  ">
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none"
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                </div>
+                                <div class=" text-sm text-gray-500 mt-2 ">
+
+                                    20/02/2023
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero
+                                dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus
+                                perferendis, blanditiis animi ipsam modi odit!</p>
+                        </div>
+                    </div>
+
+                    <div class=" shadow-md rounded-md p-6 card-bg">
+                        <div class="flex items-center mb-6">
+                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
+                            <div class="ms-4 font-medium dark:text-white">
+                                <p>Alberta</p>
+                                <div class="flex items-center  ">
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none"
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                </div>
+                                <div class=" text-sm text-gray-500 mt-2 ">
+
+                                    20/02/2023
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero
+                                dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus
+                                perferendis, blanditiis animi ipsam modi odit!</p>
+                        </div>
+                    </div>
+
+                    <div class=" shadow-md rounded-md p-6 card-bg">
+                        <div class="flex items-center mb-6">
+                            <img class="w-12 h-12 rounded-full" src="../../../public/assets/images/alberta.jpeg" alt="">
+                            <div class="ms-4 font-medium dark:text-white">
+                                <p>Alberta</p>
+                                <div class="flex items-center  ">
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-yellow-300 ms-1 star-svg" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 ms-1 text-gray-300 dark:text-gray-500 star-svg-none"
+                                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        viewBox="0 0 22 20">
+                                        <path
+                                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                                    </svg>
+                                </div>
+                                <div class=" text-sm text-gray-500 mt-2 ">
+                                    20/02/2023
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="space-y-4 text-sm text-gray-500 dark:text-gray-400">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, dicta. Quod at vero
+                                dolorem adipisci vitae magni, esse reiciendis velit nam! Explicabo voluptas natus
+                                perferendis, blanditiis animi ipsam modi odit!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white text-[32px] mt-10 mb-6" >Conoce Nuestros Paquetes </h3>
                 
-                    <h3 class="text-white text-[32px] mt-10 mb-6" >Conoce Nuestros Paquetes </h3>
-                
-                    <div class="flex justify-center gap-6 mb-6">
+                    <div class="flex justify-center gap-6 mb-6 ">
                         <!-- Primer cuadro -->
+                        
                         <div class="card p-6 rounded-lg text-center flex-1 border border-gray-500">
                             <h3 class="text-white mb-4">PAQUETE DIVERSIÓN</h3>
                             <ul class="text-white list-disc ml-2">
@@ -424,7 +460,7 @@
                         <div class="card p-6 rounded-lg text-center flex-1 border border-gray-500">
                             <h3 class="text-white mb-4">PAQUETE IMAGINA FULL</h3>
                             <ul class="text-white list-disc ml-2">
-                                <li>baile Nupcial</li>
+                                <li>Baile Nupcial</li>
                                 <li>Hora Loca</li>
                                 <li>Espectáculo para cena o almuerzo</li>
                             </ul>
@@ -442,23 +478,87 @@
                             <button class="text-white bg-primary hover:bg-secondary font-medium rounded-lg text-sm px-10 py-2.5">Obtener</button>
                         </div>
                     </div>
-                    
-                    
-                
-                <div class="text-center mt-6">
-                    <button class="text-white bg-primary font-semibold hover:bg-secondary font-medium rounded-lg text-sm px-10 py-2.5">ELIGE TU PAQUETE</button>
-                </div>
-                
-
+                    <div class="text-center mt-6">
+                        <button class="text-white bg-primary font-semibold hover:bg-secondary font-medium rounded-lg text-sm px-10 py-2.5">ELIGE TU PAQUETE</button>
+                    </div>
             </div>
-
-
-        </div>
+        </section>
     </div>
 
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- right section fixed -->
 
+    <aside id="sidebar"
+        class="sidebar-righ z-40 fixed top-6 right-0 h-full mt-10 p-2 pt-2  bg-dark-transparent text-white w-80overflow-y-auto transform transition-transform translate-x-full md:translate-x-0">
+        <h2 class="text-white  text-2xl font-sansation">Mis Proveedores</h2>
+        <div class="space-y-1 bg-dark-transparent p-2 rounded-lg">
+            <div
+                class="w-full h-20 flex items-center bg-transparent bg-opacity-25 rounded-[5px] border border-line_light p-2">
+                <img class="w-1/4 h-full rounded-[3px]" src="https://via.placeholder.com/105x89" />
+                <div class="ml-2 flex flex-col justify-between h-full">
+                    <div class="text-white text-[14px] font-semibold">Imagina Productora</div>
+                    <div class="text-white text-sm font-light">Entretenimiento</div>
+                    <div class="flex items-center">
+
+                        <div class="mr-1">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 fill-current">
+                                    <path
+                                        d="M12 1l2.86 5.46 6.37.92-4.62 4.75 1.09 6.35-5.71-3.13-5.71 3.13 1.09-6.35-4.62-4.75 6.37-.92L12 1z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 fill-current">
+                                    <path
+                                        d="M12 1l2.86 5.46 6.37.92-4.62 4.75 1.09 6.35-5.71-3.13-5.71 3.13 1.09-6.35-4.62-4.75 6.37-.92L12 1z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 fill-current">
+                                    <path
+                                        d="M12 1l2.86 5.46 6.37.92-4.62 4.75 1.09 6.35-5.71-3.13-5.71 3.13 1.09-6.35-4.62-4.75 6.37-.92L12 1z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 fill-current">
+                                    <path
+                                        d="M12 1l2.86 5.46 6.37.92-4.62 4.75 1.09 6.35-5.71-3.13-5.71 3.13 1.09-6.35-4.62-4.75 6.37-.92L12 1z" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400 fill-current">
+                                    <path
+                                        d="M12 1l2.86 5.46 6.37.92-4.62 4.75 1.09 6.35-5.71-3.13-5.71 3.13 1.09-6.35-4.62-4.75 6.37-.92L12 1z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="text-white text-[12px] font-regular">4.5</div>
+                    </div>
+                </div>
+            </div>
+
+
+    </aside>
+    </div>
+    <!-- sidebar right -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButtonRight = document.getElementById('toggleButtonRight');
+            const sidebar = document.getElementById('sidebar');
+            const blurActive = document.getElementById('blur-active')
+
+            toggleButtonRight.addEventListener('click', function () {
+                sidebar.classList.toggle('translate-x-full');
+                blurActive.classList.toggle('blur-sm');
+                blurActive.classList.toggle('brightness-50');
+            });
+        });
+    </script>
+    <!-- sidebar left -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('toggleButtonLeft');
+            const sidebar = document.getElementById('drawer-example');
+
+            toggleButton.addEventListener('click', function () {
+                sidebar.classList.remove('sidebar-menu-left')
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="../../js/slider.js"></script>
+    <script src="/src/js/notification.js"></script>
 </body>
-
 </html>
